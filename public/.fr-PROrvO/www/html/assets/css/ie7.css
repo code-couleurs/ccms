@@ -1,0 +1,20 @@
+/* 
+    Document   : ie7
+    Created on : 7 nov. 2012, 15:05:39
+    Author     : Marion
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* Menu déroulant */
+.menu_niveau_2 {
+    margin-top:41px;
+}
+
+.diapo-set > span { 
+  zoom:1; /* layout */
+}
+
+#rte-offre-diapo .diapo { 
+  display:inline; /* correctif inline-block */
+}

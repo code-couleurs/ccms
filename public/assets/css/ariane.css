@@ -1,0 +1,46 @@
+/* 
+    Document   : ariane
+    Created on : 5 nov. 2012, 17:59:51
+    Author     : Marion
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#ariane {
+    font-family: Arial Rounded, Arial, sans-serif;
+    font-size:12px;
+    color:#ACBBD0;
+    
+    clear:left;
+    margin-left:20px;
+    margin-top:15px;
+}
+    #ariane div {
+        float:left;
+    }
+
+    ul#fil-ariane {
+        margin:0;
+        padding:0;
+        float:left;
+    }
+    
+        #fil-ariane li {
+            float:left;
+            list-style: none outside none;
+            background-image:url(../img/ariane.png);
+            background-repeat:no-repeat;
+            padding-left:10px;
+            margin-left:5px;
+        }
+
+            #fil-ariane li a {
+                font-size:12px;
+                color:#ACBBD0;
+                text-decoration:none;
+            }
+
+            #fil-ariane li a:hover {
+                text-decoration:underline;
+            }
+

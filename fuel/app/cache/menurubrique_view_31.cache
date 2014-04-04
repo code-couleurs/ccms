@@ -1,0 +1,47 @@
+{{Fuel_Cache_Properties}}{"created":1352796875,"expiration":null,"dependencies":["arborescence"],"content_handler":"string"}{{/Fuel_Cache_Properties}}<span class="menu_rubrique_title">
+    Actualités</span>
+<ul class="menu_rubrique_sousrubriques">
+        <li class="active-trail">
+        <div><a href="Editorial">Actualités du DPS</a></div>
+        <ul class="menu_rubrique_pages">
+                        <li>
+                <a class="active" href="Editorial">Editos</a>
+            </li>
+                        <li>
+                <a  href="Dps-en-projets">Actus des projets</a>
+            </li>
+                    </ul>
+    </li>
+        <li >
+        <div><a href="Actualites-des-poles">Actualités des pôles</a></div>
+        <ul class="menu_rubrique_pages">
+                        <li>
+                <a  href="Actualites-des-poles">Actualités des pôles</a>
+            </li>
+                        <li>
+                <a  href="Maintenance-Courante-Poste">Maintenance Courante Poste</a>
+            </li>
+                        <li>
+                <a  href="Exploitation">Exploitation</a>
+            </li>
+                        <li>
+                <a  href="Developpement-Ingenierie-Reseau">Développement Ingénierie Réseau</a>
+            </li>
+                        <li>
+                <a  href="Maintenance-Courante-Electrique">Maintenance Courante Electrique</a>
+            </li>
+                        <li>
+                <a  href="Maintenance-Telecom-et-SI">Maintenance Télécom et SI</a>
+            </li>
+                        <li>
+                <a  href="Maintenance-Specialisee-Poste">Maintenance Spécialisée Poste</a>
+            </li>
+                        <li>
+                <a  href="Management-et-metiers-transverses">Management et métiers transverses</a>
+            </li>
+                        <li>
+                <a  href="Innovation-et-Inegnierie-de-la-Formation">Innovation et Ingénierie de la Formation</a>
+            </li>
+                    </ul>
+    </li>
+    </ul>

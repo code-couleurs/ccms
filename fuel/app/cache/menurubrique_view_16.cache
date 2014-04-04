@@ -1,0 +1,35 @@
+{{Fuel_Cache_Properties}}{"created":1352796960,"expiration":null,"dependencies":["arborescence"],"content_handler":"string"}{{/Fuel_Cache_Properties}}<span class="menu_rubrique_title">
+    Se professionnaliser</span>
+<ul class="menu_rubrique_sousrubriques">
+        <li class="active-trail">
+        <div><a href="Plan-de-formation">Les dispositifs</a></div>
+        <ul class="menu_rubrique_pages">
+                        <li>
+                <a  href="Plan-de-formation">Plan de formation</a>
+            </li>
+                        <li>
+                <a  href="Bilan-de-competence">Bilan de compétences</a>
+            </li>
+                        <li>
+                <a  href="Validation-des-acquis-de-lexperience">Validation des acquis (VAE)</a>
+            </li>
+                        <li>
+                <a class="active" href="Droits-individuels-a-la-formation-DIF">Droit individuel à la formation (DIF)</a>
+            </li>
+                        <li>
+                <a  href="Formation-promotionnelle-et-accompagnement-de-la-promotion">Formation promotionnelle et accompagnement de la promotion</a>
+            </li>
+                        <li>
+                <a  href="Conge-individuel-de-formation-cif">Congé individuel de formation (CIF)</a>
+            </li>
+                    </ul>
+    </li>
+        <li >
+        <div><a href="Inscription-mode-demploi">S'inscrire en formation</a></div>
+        <ul class="menu_rubrique_pages">
+                        <li>
+                <a  href="Inscription-mode-demploi">S'inscrire en formation</a>
+            </li>
+                    </ul>
+    </li>
+    </ul>

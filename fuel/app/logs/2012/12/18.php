@@ -1,0 +1,8 @@
+Error - 2012-12-18 16:29:07 --> Error - Call to a member function set() on a non-object in /home/praentitong/www/cms_rte/fuel/app/modules_cms/pagebox/classes/controller/pagebox.php on line 39
+Error - 2012-12-18 16:31:15 --> Error - Call to a member function set() on a non-object in /home/praentitong/www/cms_rte/fuel/app/modules_cms/pagebox/classes/controller/pagebox.php on line 39
+Error - 2012-12-18 16:31:17 --> Error - Call to a member function set() on a non-object in /home/praentitong/www/cms_rte/fuel/app/modules_cms/pagebox/classes/controller/pagebox.php on line 39
+Error - 2012-12-18 16:35:24 --> Error - Call to a member function set() on a non-object in /home/praentitong/www/cms_rte/fuel/app/modules_cms/pagebox/classes/controller/pagebox.php on line 39
+Error - 2012-12-18 16:37:16 --> Error - Call to a member function set() on a non-object in /home/praentitong/www/cms_rte/fuel/app/modules_cms/pagebox/classes/controller/pagebox.php on line 72
+Error - 2012-12-18 17:29:30 --> Error - Class 'Bloctextemedia\Pagebox\Controller_Pagebox' not found in /home/praentitong/www/cms_rte/fuel/app/modules_cms/bloctextemedia/classes/model/bloctextemedia.php on line 64
+Error - 2012-12-18 17:30:02 --> 2 - Missing argument 2 for Pagebox\Controller_Pagebox::duplicate_pageboxes_from_text(), called in /home/praentitong/www/cms_rte/fuel/app/modules_cms/bloctextemedia/classes/model/bloctextemedia.php on line 64 and defined in /home/praentitong/www/cms_rte/fuel/app/modules_cms/pagebox/classes/controller/pagebox.php on line 132
+Error - 2012-12-18 17:34:40 --> 8 - Undefined variable: pagebox_id in /home/praentitong/www/cms_rte/fuel/app/modules_cms/pagebox/classes/controller/pagebox.php on line 142

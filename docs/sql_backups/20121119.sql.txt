@@ -1,0 +1,480 @@
+-- phpMyAdmin SQL Dump
+-- version 3.4.10.1deb1
+-- http://www.phpmyadmin.net
+--
+-- Client: localhost
+-- Généré le : Lun 19 Novembre 2012 à 10:45
+-- Version du serveur: 5.5.24
+-- Version de PHP: 5.3.10-1ubuntu3.4
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Base de données: `cmsrte`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `blocs`
+--
+
+DROP TABLE IF EXISTS `blocs`;
+CREATE TABLE IF NOT EXISTS `blocs` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `code` varchar(50) NOT NULL,
+  `position` int(11) unsigned NOT NULL,
+  `revision_id` int(11) unsigned NOT NULL,
+  `date_creation` int(11) NOT NULL,
+  `date_modification` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=93 ;
+
+--
+-- Contenu de la table `blocs`
+--
+
+INSERT INTO `blocs` (`id`, `code`, `position`, `revision_id`, `date_creation`, `date_modification`) VALUES
+(18, 'bloc_texte', 6, 14, 1352308449, 1352308449),
+(19, 'bloc_texte', 8, 14, 1352309261, 1352309261),
+(20, 'bloc_texte', 8, 14, 1352309364, 1352309364),
+(21, 'bloc_texte', 8, 14, 1352309430, 1352309430),
+(22, 'bloc_texte', 8, 14, 1352309478, 1352309478),
+(23, 'bloc_texte', 6, 15, 1352373530, 1352373530),
+(24, 'bloc_texte', 6, 15, 1352373609, 1352373609),
+(25, 'bloc_texte', 8, 15, 1352373731, 1352373731),
+(26, 'bloc_texte', 8, 15, 1352373816, 1352373816),
+(27, 'bloc_texte', 6, 16, 1352373931, 1352373931),
+(28, 'bloc_texte', 6, 16, 1352373965, 1352373965),
+(29, 'bloc_texte', 8, 16, 1352374011, 1352374011),
+(31, 'bloc_texte', 8, 16, 1352374127, 1352374127),
+(32, 'bloc_texte', 1, 17, 1352374276, 1352881773),
+(33, 'bloc_texte', 6, 17, 1352374336, 1352881766),
+(35, 'bloc_texte', 7, 17, 1352374424, 1352881842),
+(36, 'bloc_texte', 6, 18, 1352374497, 1352374497),
+(37, 'bloc_texte', 6, 18, 1352374521, 1352374521),
+(38, 'bloc_texte', 8, 18, 1352374588, 1352374588),
+(39, 'bloc_texte', 8, 18, 1352374681, 1352374681),
+(46, 'bloc_texte', 6, 51, 1352879811, 1352879811),
+(47, 'bloc_texte', 6, 51, 1352879826, 1352879826),
+(48, 'bloc_texte', 8, 51, 1352879850, 1352879850),
+(50, 'bloc_texte', 6, 17, 1352881752, 1352881755),
+(51, 'bloc_texte', 6, 17, 1352881807, 1352881814),
+(52, 'bloc_texte', 6, 17, 1352881840, 1352881856),
+(53, 'bloc_texte', 1, 23, 1352906087, 1352906087),
+(54, 'bloc_texte', 5, 23, 1352906171, 1352906171),
+(55, 'bloc_texte', 6, 23, 1352906430, 1352906430),
+(56, 'bloc_texte', 1, 23, 1352969397, 1352969404),
+(61, 'bloc_texte', 4, 57, 1352969743, 1352976979),
+(63, 'bloc_texte', 1, 66, 1352972646, 1352972646),
+(64, 'bloc_texte', 1, 67, 1352974851, 1352974851),
+(65, 'bloc_texte', 1, 68, 1352975592, 1352975592),
+(66, 'bloc_texte', 1, 57, 1352977137, 1352977152),
+(67, 'bloc_texte', 5, 57, 1352977209, 1352977209),
+(68, 'bloc_texte', 1, 58, 1352986186, 1352986186),
+(69, 'bloc_texte', 1, 58, 1352986224, 1352986242),
+(70, 'bloc_texte', 1, 61, 1352986303, 1352986303),
+(71, 'bloc_texte', 1, 61, 1352986327, 1352986327),
+(72, 'bloc_texte', 1, 61, 1352986364, 1352986364),
+(73, 'bloc_texte', 4, 61, 1352986486, 1352986486),
+(74, 'bloc_texte', 1, 62, 1352986656, 1352986656),
+(75, 'bloc_texte', 1, 62, 1352986700, 1352986700),
+(76, 'bloc_texte', 1, 62, 1352986720, 1352986720),
+(77, 'bloc_texte', 1, 65, 1352986794, 1352986794),
+(78, 'bloc_texte', 1, 65, 1352986831, 1352986831),
+(79, 'bloc_texte', 1, 65, 1352986878, 1352986878),
+(80, 'bloc_texte', 7, 37, 1352987752, 1352987752),
+(81, 'bloc_texte', 8, 37, 1352987818, 1352987818),
+(82, 'bloc_texte', 9, 37, 1352988096, 1352988096),
+(83, 'bloc_texte', 3, 66, 1352988554, 1353318096),
+(84, 'bloc_texte', 1, 26, 1352988772, 1352988772),
+(85, 'bloc_chapo', 1, 26, 1352988777, 1352988784),
+(86, 'bloc_texte', 1, 27, 1352989705, 1352989705),
+(87, 'bloc_texte', 1, 56, 1352989964, 1352989964),
+(88, 'bloc_texte', 1, 20, 1353054681, 1353054946),
+(89, 'bloc_texte', 2, 20, 1353054696, 1353054978),
+(90, 'bloc_texte', 2, 20, 1353054710, 1353054967),
+(91, 'bloc_texte', 4, 20, 1353056542, 1353056542),
+(92, 'bloc_documents_stage', 2, 66, 10, 10);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `blocs_chapo`
+--
+
+DROP TABLE IF EXISTS `blocs_chapo`;
+CREATE TABLE IF NOT EXISTS `blocs_chapo` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `contenu` text NOT NULL,
+  `bloc_id` int(11) unsigned NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+--
+-- Contenu de la table `blocs_chapo`
+--
+
+INSERT INTO `blocs_chapo` (`id`, `contenu`, `bloc_id`) VALUES
+(2, 'Le Département Professionnalisation des Salariés a pour ambition d’  « être un partenaire reconnu de tous, dans l’accompagnement des changements et l’évolution des métiers »', 85);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `blocs_image`
+--
+
+DROP TABLE IF EXISTS `blocs_image`;
+CREATE TABLE IF NOT EXISTS `blocs_image` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `caption` text,
+  `path` text NOT NULL,
+  `bloc_id` int(11) unsigned NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `blocs_texte`
+--
+
+DROP TABLE IF EXISTS `blocs_texte`;
+CREATE TABLE IF NOT EXISTS `blocs_texte` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `titre` varchar(100) NOT NULL,
+  `contenu` text NOT NULL,
+  `bloc_id` int(11) unsigned NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=65 ;
+
+--
+-- Contenu de la table `blocs_texte`
+--
+
+INSERT INTO `blocs_texte` (`id`, `titre`, `contenu`, `bloc_id`) VALUES
+(1, 'Description', '<p>\r\n	Le Bilan de Comp&eacute;tence permet au salari&eacute; de faire le point sur ses aptitudes, ses potentiels et ses motivations personnelles et professionnelles pour l&rsquo;aider, le cas &eacute;ch&eacute;ant, dans la d&eacute;finition de son projet professionnel. Il permet &eacute;galement au salari&eacute; d&rsquo;&eacute;valuer la faisabilit&eacute; de son projet et d&rsquo;envisager les modalit&eacute;s de r&eacute;alisation et d&rsquo;accompagnement de ce projet.</p>\r\n<p>\r\n	Le bilan de comp&eacute;tences ne permet pas, en soit, une modification de la situation professionnelle du salari&eacute;.<br />\r\n	Pendant l&rsquo;entretien de professionnalisation,&nbsp;le bilan de comp&eacute;tences peut &ecirc;tre propos&eacute; soit par le salari&eacute;, soit par son manager. Dans tous les cas, il est conseill&eacute; de se rapprocher de son conseiller carri&egrave;re.<br />\r\n	A l&rsquo;initiative du manager et avec le consentement du salari&eacute;, il peut &ecirc;tre r&eacute;alis&eacute; sur le Plan de Formation d&rsquo;Entreprise (<a href="/plan-de-formation">PFE</a>).</p>\r\n<p>\r\n	A la demande du salari&eacute; et avec l&rsquo;accord de son manager il peut &ecirc;tre r&eacute;alis&eacute; sur le Droit Individuel &agrave; la Formation (<a href="/Droits-individuels-a-la-formation-DIF">DIF</a>).</p>\r\n<p>\r\n	Sans n&eacute;cessiter l&rsquo;accord du manager sur son principe, le bilan de comp&eacute;tences peut &ecirc;tre r&eacute;alis&eacute; par le salari&eacute; dans le cadre d&rsquo;un Cong&eacute; Individuel de Formation (<a href="/conge-individuel-de-formation-cif">CIF</a>).</p>\r\n', 18),
+(2, 'A qui s’adresse ce dispositif ?', '<p>\r\n	Ce dispositif s&rsquo;adresse &agrave; l&rsquo;ensemble des salari&eacute;s. En cas de recours au CIF, le salari&eacute; doit justifier de cinq ann&eacute;es d&rsquo;exp&eacute;rience et de douze mois d&rsquo;anciennet&eacute; dans l&rsquo;entreprise.</p>\r\n', 19),
+(3, 'Procédure à suivre', '<p>\r\n	Lorsque le bilan de comp&eacute;tences est r&eacute;alis&eacute; dans le cadre du plan de formation,</p>\r\n<ul>\r\n	<li>\r\n		Le correspondant formation est en charge de l&rsquo;organisation de cette action et propose le prestataire.</li>\r\n	<li>\r\n		Le manager propose au salari&eacute; une convention tripartite (employeur, salari&eacute;, prestataire) pour recueillir son accord. Cette convention pr&eacute;cise les conditions d&rsquo;une &eacute;ventuelle transmission du document de synth&egrave;se par le salari&eacute; &agrave; l&rsquo;employeur. Le salari&eacute; dispose d&rsquo;un d&eacute;lai de 10 jours pour l&rsquo;accepter, en restituant &agrave; son manager le document sign&eacute;. L&rsquo;absence de r&eacute;ponse du salari&eacute; vaut refus de sa part.</li>\r\n</ul>\r\n<p>\r\n	Lorsque le bilan de comp&eacute;tences est r&eacute;alis&eacute; dans le cadre d&rsquo;un DIF,</p>\r\n<ul>\r\n	<li>\r\n		Apr&egrave;s accord verbal de son manager, le salari&eacute; doit confirmer sa demande par un formulaire de demande de DIF (lien vers proc&eacute;dure DIF).</li>\r\n	<li>\r\n		Le prestataire, pr&eacute;cis&eacute; dans une convention tripartite, est s&eacute;lectionn&eacute; apr&egrave;s concertation entre manager, salari&eacute; et RH.</li>\r\n	<li>\r\n		Le salari&eacute; est le seul b&eacute;n&eacute;ficiaire et propri&eacute;taire du document de synth&egrave;se &eacute;tabli par le prestataire.</li>\r\n</ul>\r\n<p>\r\n	Lorsque le bilan se fait dans le cadre d&rsquo;un CIF,</p>\r\n<ul>\r\n	<li>\r\n		Le salari&eacute; doit se rapprocher de l&rsquo;UNAGECIF pour conna&icirc;tre les conditions de mise en &oelig;uvre et les modalit&eacute;s pratiques de sa demande de prise en charge (voir descriptif du dispositif CIF).</li>\r\n	<li>\r\n		Le prestataire doit faire partie de la liste des prestataires agr&eacute;es par UNAGECIF.</li>\r\n	<li>\r\n		Le salari&eacute; est le seul b&eacute;n&eacute;ficiaire et propri&eacute;taire du document de synth&egrave;se &eacute;tabli par le prestataire.</li>\r\n</ul>\r\n', 20),
+(4, 'Déroulement du bilan de compétences', '<p>\r\n	Le bilan de comp&eacute;tences se d&eacute;roule sur une dur&eacute;e totale de 24 heures, en trois &eacute;tapes&nbsp;:</p>\r\n<ul>\r\n	<li>\r\n		la phase pr&eacute;liminaire&nbsp;: elle est destin&eacute;e &agrave; la d&eacute;finition et &agrave; l&rsquo;analyse des besoins du salari&eacute; et &agrave; son information sur les conditions de d&eacute;roulement du bilan et les moyens utilis&eacute;s.</li>\r\n	<li>\r\n		la phase d&rsquo;investigation&nbsp;: elle est centr&eacute;e sur les comp&eacute;tences, aptitudes et &eacute;volutions professionnelles du salari&eacute;.</li>\r\n	<li>\r\n		la phase de conclusion&nbsp;: le bilan se termine par des entretiens personnalis&eacute;s durant lesquels les r&eacute;sultats du bilan sont expos&eacute;s au salari&eacute;. Ces r&eacute;sultats se pr&eacute;sentent sous la forme d&rsquo;un document de synth&egrave;se.</li>\r\n</ul>\r\n', 21),
+(5, 'Liens utiles', '<p>\r\n	<a href="http://www.unagecif.com/" target="_blank">Site UNAGECIF (liste des prestataires agr&eacute;&eacute;s)</a></p>\r\n', 22),
+(6, 'Description', '<p>\r\n	La Validation des Acquis de l&rsquo;Exp&eacute;rience (VAE) est une d&eacute;marche volontaire d&rsquo;un salari&eacute; qui, dans le cadre de son projet professionnel, a besoin d&rsquo;une reconnaissance officielle de l&rsquo;exp&eacute;rience qu&rsquo;il a acquise dans le cadre de ses activit&eacute;s professionnelles ou extra-professionnelles. Cette reconnaissance officielle passe par tout ou partie d&rsquo;une certification enregistr&eacute;e au r&eacute;pertoire national des certifications professionnelles (RNCP), d&rsquo;un dipl&ocirc;me, d&rsquo;un titre &agrave; finalit&eacute; professionnelle ou d&rsquo;un certificat de qualification professionnelle (CQP) &eacute;tabli par la branche professionnelle.</p>\r\n<p>\r\n	L&rsquo;obtention du dipl&ocirc;me ou de la certification vis&eacute;s ne permet pas, en soit, une modification de la situation professionnelle du salari&eacute;.</p>\r\n<p>\r\n	En r&egrave;gle g&eacute;n&eacute;rale, l&rsquo;accompagnement du projet professionnel par une VAE est d&eacute;cid&eacute; dans le cadre de l&rsquo;entretien de professionnalisation. Cette VAE peut &ecirc;tre r&eacute;alis&eacute;e :</p>\r\n<ul>\r\n	<li>\r\n		Dans le cadre du plan de formation lorsqu&rsquo;il s&rsquo;agit d&rsquo;une d&eacute;marche concert&eacute;e entre le salari&eacute; et son manager,</li>\r\n	<li>\r\n		Dans le cadre du Droit Individuel &agrave; la Formation (<a href="/Droits-individuels-a-la-formation-DIF">DIF</a>)&nbsp;si elle se fait &agrave; l&rsquo;initiative du salari&eacute; avec l&rsquo;accord du manager,</li>\r\n	<li>\r\n		Dans le cadre du Cong&eacute; Individuel de Formation (<a href="/conge-individuel-de-formation-cif">CIF</a>) &agrave; l&rsquo;initiative du salari&eacute; sans besoin d&rsquo;accord du manager.</li>\r\n</ul>\r\n<p>\r\n	Les dur&eacute;es accord&eacute;es au salari&eacute; pour la d&eacute;marche de VAE sont respectivement de 35 heures lorsque cette action est r&eacute;alis&eacute;e dans le cadre du plan de formation et de 24 heures lorsqu&rsquo;elle est r&eacute;alis&eacute;e dans le cadre du DIF ou d&rsquo;un CIF.</p>\r\n<p>\r\n	Lorsque plusieurs salari&eacute;s souhaitent faire reconnaitre leur exp&eacute;rience au travers du m&ecirc;me dipl&ocirc;me ou de dipl&ocirc;mes voisins et que cette d&eacute;marche int&eacute;resse l&rsquo;entreprise, RTE pourra proposer aux salari&eacute;s concern&eacute;s un accompagnement par un organisme externe, dans le cadre d&rsquo;une <a class="fancyvideo" href="/files/video-vae.mp4">VAE accompagn&eacute;e</a>. Cet accompagnement porte essentiellement sur la phase de constitution du dossier de VAE et sur la pr&eacute;paration de l&rsquo;entretien devant le jury de VAE.</p>\r\n', 23),
+(7, 'A qui s’adresse ce dispositif ?', '<p>\r\n	A tous les salari&eacute;s justifiant de trois ans d&rsquo;exp&eacute;rience dans un domaine correspondant au contenu du dipl&ocirc;me vis&eacute;.</p>\r\n', 24),
+(8, 'Déroulement d’une VAE', '<p>\r\n	<strong>Constitution du dossier</strong></p>\r\n<p>\r\n	Pour le salari&eacute;, il est important de viser un dipl&ocirc;me correspondant au mieux &agrave; son exp&eacute;rience. Dans ce but, le salari&eacute; pourra utilement demander conseil&nbsp;:</p>\r\n<ul>\r\n	<li>\r\n		A son manager, son correspondant formation ou encore son conseiller carri&egrave;re,</li>\r\n	<li>\r\n		Le cas &eacute;ch&eacute;ant, au Dispositif Acad&eacute;mique de Validation des Acquis (DAVA) de son acad&eacute;mie, ainsi que</li>\r\n	<li>\r\n		Au Centre Acad&eacute;mique de Validation des Acquis (CAVA) &eacute;galement pr&eacute;sent dans chaque acad&eacute;mie.</li>\r\n	<li>\r\n		Et enfin &agrave; un conseiller de l&rsquo;UNAGECIF.</li>\r\n</ul>\r\n<p>\r\n	Apr&egrave;s retrait du dossier aupr&egrave;s de l&rsquo;institution qui dispense le dipl&ocirc;me, le salari&eacute; constitue un dossier en r&eacute;unissant les justificatifs correspondant au dipl&ocirc;me vis&eacute;. Son exp&eacute;rience doit &ecirc;tre analys&eacute;e et d&eacute;crite en lien avec le dipl&ocirc;me vis&eacute;.<br />\r\n	Le salari&eacute; ne peut d&eacute;poser qu&rsquo;un seul dossier de VAE par ann&eacute;e civile pour le m&ecirc;me dipl&ocirc;me.<br />\r\n	<br />\r\n	<strong>Validation des acquis</strong></p>\r\n<p>\r\n	La demande de VAE et les documents qui l&rsquo;accompagnent sont soumis au jury de l&rsquo;organisme dispensateur du dipl&ocirc;me ; celui-ci est constitu&eacute; d&rsquo;un quart de professionnels. Le processus de validation est g&eacute;r&eacute; par l&rsquo;organisme sollicit&eacute;.</p>\r\n<p>\r\n	Le jury va comparer les comp&eacute;tences acquises par le salari&eacute; et celles d&eacute;crites dans le r&eacute;f&eacute;rentiel du dipl&ocirc;me. A l&rsquo;issue de cette &eacute;tape, le jury peut d&eacute;cider&nbsp;:</p>\r\n<ul>\r\n	<li>\r\n		De valider l&rsquo;int&eacute;gralit&eacute; du dipl&ocirc;me,</li>\r\n	<li>\r\n		De ne valider qu&rsquo;une partie du dipl&ocirc;me&nbsp;: dans ce cas la d&eacute;cision s&rsquo;accompagne d&rsquo;une prescription d&rsquo;activit&eacute;s professionnelles ou de formation &agrave; r&eacute;aliser dans les 5 ans,</li>\r\n	<li>\r\n		De refuser la validation&nbsp;: ce cas met en &eacute;vidence que le dipl&ocirc;me vis&eacute; ne correspondait pas &agrave; l&rsquo;exp&eacute;rience acquise.</li>\r\n</ul>\r\n<p>\r\n	<strong>A l&rsquo;issue de la d&eacute;marche</strong></p>\r\n<p>\r\n	A son retour de VAE, le salari&eacute; peut demander &agrave; son manager un entretien de professionnalisation afin d&rsquo;examiner avec lui la suite de l&rsquo;accompagnement de son projet professionnel. Le cas &eacute;ch&eacute;ant, cet accompagnement peut inclure les formations prescrites par le jury.</p>\r\n', 25),
+(9, 'Liens utiles', '<ul>\r\n	<li>\r\n		<a href="http://www.rncp.cncp.gouv.fr/" target="_blank">RPNC : R&eacute;pertoire National des Certifications Professionnelles</a></li>\r\n	<li>\r\n		<a class="fancyvideo" href="/files/video-vae.mp4">La VAE accompagn&eacute;e &agrave; RTE</a></li>\r\n	<li>\r\n		<a href="http://eduscol.education.fr/pid23196-cid47044/vae-coordonnees-des-dava.html" target="_blank">Coordonn&eacute;es des DAVA</a></li>\r\n</ul>\r\n', 26),
+(10, 'Description', '<p>\r\n	Le projet professionnel du salari&eacute; est discut&eacute; lors de l&rsquo;entretien de professionnalisation avec son manager. Le manager peut alors proposer au salari&eacute; un accompagnement de ce projet par un certain nombre d&rsquo;actions. Les actions de formation&nbsp; pourront &ecirc;tre r&eacute;alis&eacute;es&nbsp;:</p>\r\n<ul>\r\n	<li>\r\n		A la demande du manager, dans le cadre du plan de formation, notamment lorsque ces actions visent directement l&rsquo;adaptation du salari&eacute; &agrave; son poste de travail,</li>\r\n	<li>\r\n		A la demande du salari&eacute;, en l&rsquo;absence d&rsquo;accord de son manager, dans le cadre d&rsquo;un Cong&eacute; Individuel de Formation (<a href="/conge-individuel-de-formation-cif">CIF</a>).</li>\r\n	<li>\r\n		A la demande du salari&eacute;, avec l&rsquo;accord de son manager, dans le cadre de son Droit Individuel &agrave; la Formation (DIF) lorsque ces actions ne sont pas indispensables &agrave; la tenue de l&rsquo;emploi occup&eacute; mais pr&eacute;sentent un int&eacute;r&ecirc;t pour l&rsquo;entreprise ou la branche des IEG.</li>\r\n</ul>\r\n<p>\r\n	Sont par ailleurs &eacute;ligibles au DIF les d&eacute;marches de <a href="/validation-des-acquis-de-lexperience">Validation des Acquis de l&rsquo;Exp&eacute;rience</a> et de <a href="/bilan-de-competences">Bilan de Comp&eacute;tences</a> (dans la limite d&rsquo;un bilan tous les cinq ans).</p>\r\n<p>\r\n	Sauf exception, la dur&eacute;e des actions de formation que peut suivre un salari&eacute; dans le cadre de son DIF n&rsquo;exc&egrave;de pas son &laquo;&nbsp;compteur DIF&nbsp;&raquo;. Chaque ann&eacute;e, ce compteur est augment&eacute; de vingt heures et diminu&eacute; des &eacute;ventuelles actions de formation suivies par le salari&eacute;. Ce compteur est toutefois plafonn&eacute; &agrave; cent vingt heures, &agrave; l&rsquo;exception de d&eacute;rogations concernant les tuteurs.</p>\r\n', 27),
+(11, 'A qui s’adresse ce dispositif ?', '<p>\r\n	Peut demander &agrave; suivre une action de formation dans le cadre de son DIF&nbsp;:</p>\r\n<ul>\r\n	<li>\r\n		Tout salari&eacute; sous Contrat &agrave; Dur&eacute;e Ind&eacute;termin&eacute;e (CDI) avec un an d&rsquo;anciennet&eacute; dans l&rsquo;entreprise,</li>\r\n	<li>\r\n		Tout salari&eacute; sous Contrat &agrave; Dur&eacute;e D&eacute;termin&eacute;e (CDD) &agrave; l&rsquo;issue d&rsquo;une dur&eacute;e de quatre mois, cons&eacute;cutifs ou non, sur une p&eacute;riode de douze mois.</li>\r\n</ul>\r\n<p>\r\n	Sont exclus de ce dispositif les salari&eacute;s sous contrat d&rsquo;apprentissage ou sous contrat de professionnalisation, ainsi que les int&eacute;rimaires (le DIF est alors g&eacute;r&eacute; par l&#39;entreprise d&#39;int&eacute;rim).</p>\r\n', 28),
+(12, 'Déroulement', '<p>\r\n	Le lancement d&rsquo;une action dans le cadre du DIF s&rsquo;effectue &agrave; l&rsquo;initiative du salari&eacute;, par l&rsquo;envoi d&rsquo;une demande &agrave; son manager. Cette demande doit :</p>\r\n<ul>\r\n	<li>\r\n		Rappeler le lien entre cette action et le projet professionnel du salari&eacute;,</li>\r\n	<li>\r\n		Mentionner le nombre d&rsquo;heures du compteur DIF &agrave; utiliser,</li>\r\n	<li>\r\n		Indiquer les horaires souhait&eacute;s des actions de formation concern&eacute;es, Hors Temps de Travail (HTT) ou Sur Temps de Travail (STT).</li>\r\n</ul>\r\n<p>\r\n	La demande devra &ecirc;tre accompagn&eacute;e d&rsquo;un descriptif d&eacute;taill&eacute; de&nbsp;la formation.</p>\r\n<p>\r\n	La demande est alors examin&eacute;e par le manager, aid&eacute; en cela par le correspondant formation de l&rsquo;&eacute;tablissement et le gestionnaire formation. Le manager dispose d&rsquo;un d&eacute;lai d&rsquo;un mois apr&egrave;s r&eacute;ception de la demande pour r&eacute;pondre par &eacute;crit au salari&eacute;. En cas de refus de sa part, le manager explique au salari&eacute; les raisons de ce refus. Le cas &eacute;ch&eacute;ant, d&rsquo;autres voies de professionnalisation pourront &ecirc;tre recherch&eacute;es.</p>\r\n<p>\r\n	Les actions de formation suivies dans le cadre du DIF peuvent se d&eacute;rouler hors temps de travail. Elles donnent alors syst&eacute;matiquement lieu au versement au salari&eacute; d&rsquo;une allocation formation d&rsquo;un montant &eacute;gal &agrave; 50 % de sa r&eacute;mun&eacute;ration nette de r&eacute;f&eacute;rence.</p>\r\n<p>\r\n	Ces actions peuvent &eacute;galement se d&eacute;rouler sur le temps de travail. Dans ce cas, la r&eacute;mun&eacute;ration du salari&eacute; est maintenue, mais aucune allocation formation ne lui est vers&eacute;e.</p>\r\n', 29),
+(13, 'Liens ou documents utiles', '<p>\r\n	<a href="/files/formulaire_demande_dif.pdf" target="_blank">Formulaire de demande d&rsquo;utilisation du DIF</a></p>\r\n', 31),
+(14, 'Description', '<p>\r\n	Lorsque le projet professionnel du salari&eacute; int&egrave;gre un changement de coll&egrave;ge (d&rsquo;ex&eacute;cution &agrave; ma&icirc;trise ou de ma&icirc;trise &agrave; cadre), le salari&eacute; et son manager disposent de plusieurs moyens pour accompagner ce projet&nbsp;:</p>\r\n<ul>\r\n	<li>\r\n		La postulation du salari&eacute; sur des offres de formation promotionnelle,</li>\r\n	<li>\r\n		Une formation dipl&ocirc;mante adapt&eacute;e &agrave; la situation du salari&eacute;,</li>\r\n	<li>\r\n		Un changement de coll&egrave;ge accompagn&eacute; par des formations.</li>\r\n</ul>\r\n<p>\r\n	Les offres de formation promotionnelle concernent l&rsquo;ensemble des entreprises de la branche des IEG et l&rsquo;ensemble des salari&eacute;s de ces entreprises. Par ces offres, et apr&egrave;s s&eacute;lection des candidats, les entreprises permettent aux salari&eacute;s retenus de suivre une formation dipl&ocirc;mante de niveau Bac+2 (passage ma&icirc;trise) ou Bac+5 (passage cadre), &agrave; l&rsquo;issue de laquelle, sous condition d&#39;obtention du dipl&ocirc;me, un emploi correspondant &agrave; leur nouvelle qualification leur sera propos&eacute;.</p>\r\n<p>\r\n	Une formation dipl&ocirc;mante peut &eacute;galement &ecirc;tre propos&eacute;e &agrave; un salari&eacute; dans le cadre du plan de formation pour accompagner son projet professionnel.</p>\r\n<p>\r\n	Enfin, le changement de coll&egrave;ge peut &ecirc;tre d&eacute;cid&eacute; sans condition d&rsquo;obtention de dipl&ocirc;me. Dans ce cas, RTE peut accompagner le salari&eacute; nouvellement promu par des formations cibl&eacute;es, concert&eacute;es entre le salari&eacute; et son manager sur la base de ses comp&eacute;tences actuelles et des comp&eacute;tences qui seront attendues dans son nouvel emploi, ou par un dispositif complet de formation (de type ARCADRE). Ces formations permettront au salari&eacute; de s&rsquo;adapter plus rapidement &agrave; son nouvel emploi et seront, le cas &eacute;ch&eacute;ant, regroup&eacute;es dans une p&eacute;riode de professionnalisation.</p>\r\n<p>\r\n	Dans tous les cas, le passage de coll&egrave;ge sera accompagn&eacute; par une formation de quelques jours (ATOUT CADRE ou ATOUT MAITRISE) permettant au salari&eacute; de mieux conna&icirc;tre les enjeux de RTE, les acteurs du march&eacute; de l&rsquo;&eacute;lectricit&eacute; et l&rsquo;ensemble de l&rsquo;environnement de l&rsquo;entreprise.</p>\r\n', 32),
+(15, 'A qui s’adressent les offres de formation promotionnelle ?', '<p>\r\n	Les offres de formation promotionnelle accessibles aux salari&eacute;s de RTE sont :</p>\r\n<ul>\r\n	<li>\r\n		La FPCAE Formation Promotionnelle Cadre Associ&eacute;e &agrave; un Emploi,</li>\r\n	<li>\r\n		La FPMAE Formation Promotionnelle Ma&icirc;trise Associ&eacute;e &agrave; un Emploi,</li>\r\n	<li>\r\n		Le CIC Cap Initiative Cadre,</li>\r\n	<li>\r\n		Le CIM Cap Initiative Ma&icirc;trise.</li>\r\n</ul>\r\n<p>\r\n	Ces offres sont accessibles &agrave; tous les salari&eacute;s dont le profil correspond aux offres de formation propos&eacute;es.</p>\r\n<p>\r\n	Les salari&eacute;s de RTE peuvent postuler sur des offres &eacute;mises par l&rsquo;ensemble des entreprises de la branche des IEG.&nbsp; De mani&egrave;re r&eacute;ciproque, les salari&eacute;s des autres entreprises de la branche sont en capacit&eacute; de postuler sur des offres &eacute;mises par RTE.</p>\r\n', 33),
+(17, 'Liens ou documents utiles', '<ul>\r\n	<li>\r\n		<a href="http://www.rte-france.com/fr/emploi-carriere/espace-mobilite-interne/defi-formation-offres-de-formations" target="_blank">Offres de formation promotionnelle RTE</a></li>\r\n	<li>\r\n		<a href="http://bourse-emploi.edf.fr/index_edf.htm" target="_blank">Bourse de l&#39;emploi</a></li>\r\n</ul>\r\n', 35),
+(18, 'Description', '<p>\r\n	Lorsque certaines actions de formation li&eacute;es au projet professionnel d&rsquo;un salari&eacute; ne sont pas prises en charge par l&rsquo;entreprise, ni dans le cadre du plan de formation, ni dans le cadre du DIF, celui-ci peut, &agrave; son initiative et &agrave; titre individuel, demander &agrave; b&eacute;n&eacute;ficier d&rsquo;un Cong&eacute; Individuel de Formation (CIF) qui lui permettra&nbsp;:</p>\r\n<ul>\r\n	<li>\r\n		De suivre ces actions de formation, qui peuvent notamment lui permettre de changer d&rsquo;activit&eacute; ou de profession, d&rsquo;acc&eacute;der &agrave; un niveau sup&eacute;rieur de qualification ou de s&rsquo;ouvrir &agrave; la culture, &agrave; la vie sociale et &agrave; l&rsquo;exercice de responsabilit&eacute;s,</li>\r\n	<li>\r\n		De b&eacute;n&eacute;ficier de la prise en charge financi&egrave;re de cette formation par un organisme externe&nbsp;: l&rsquo;UNAGECIF. La prise en charge concerne alors les frais p&eacute;dagogiques vers&eacute;s &agrave; l&rsquo;organisme de formation (n&eacute;anmoins plafonn&eacute;s), la r&eacute;mun&eacute;ration du salari&eacute; (r&eacute;mun&eacute;ration nette de r&eacute;f&eacute;rence), et, sous conditions, le remboursement des &eacute;ventuels frais de d&eacute;placement et d&rsquo;h&eacute;bergement.</li>\r\n</ul>\r\n<p>\r\n	La formation peut se d&eacute;rouler en tout ou partie sur le temps de travail, ou en totalit&eacute; hors temps de travail. La dur&eacute;e d&rsquo;un CIF d&eacute;pend de la formation choisie mais ne peut exc&eacute;der un an pour une formation &agrave; temps plein et 1&nbsp;200 heures pour une formation &agrave; temps partiel.</p>\r\n<p>\r\n	Durant le cong&eacute; individuel de formation, le contrat de travail du salari&eacute; est suspendu. Le salari&eacute; continue &agrave; percevoir sa r&eacute;mun&eacute;ration nette de r&eacute;f&eacute;rence sous r&eacute;serve de justifier de sa pr&eacute;sence en formation durant toute la dur&eacute;e du cong&eacute;.</p>\r\n<p>\r\n	A l&rsquo;issue de sa formation, le salari&eacute; r&eacute;int&egrave;gre son poste de&nbsp; travail ou un poste &eacute;quivalent, sans changement de r&eacute;mun&eacute;ration.</p>\r\n<p>\r\n	Si le salari&eacute; a obtenu durant son CIF un dipl&ocirc;me susceptible d&rsquo;int&eacute;resser l&rsquo;entreprise, il peut, &agrave; sa demande, figurer dans un &laquo; vivier &raquo; qui sera utilis&eacute; par le management pour l&rsquo;aider &agrave; acc&eacute;der &agrave; un emploi correspondant &agrave; sa nouvelle qualification.</p>\r\n<p>\r\n	A la demande du salari&eacute;, les actions de formation qu&rsquo;il aura suivies dans le cadre d&rsquo;un CIF pourront &ecirc;tre mentionn&eacute;es dans son passeport formation.</p>\r\n', 36),
+(19, 'A qui s’adresse ce dispositif ?', '<p>\r\n	Pour b&eacute;n&eacute;ficier d&rsquo;un CIF, le salari&eacute; doit justifier d&rsquo;une anciennet&eacute; de 24 mois cons&eacute;cutifs.</p>\r\n<p>\r\n	Le cas &eacute;ch&eacute;ant, il doit &eacute;galement respecter un d&eacute;lai de franchise entre deux CIF, &eacute;gal &agrave; la dur&eacute;e du premier CIF (en heures) divis&eacute; par douze. Ce d&eacute;lai de franchise ne peut &ecirc;tre inf&eacute;rieur &agrave; six mois ou exc&eacute;der six ans. Il court &agrave; partir du dernier jour du premier CIF jusqu&rsquo;&agrave; la date de d&eacute;marrage du nouveau CIF.</p>\r\n', 37),
+(20, 'Déroulement', '<p>\r\n	Le salari&eacute; qui souhaite b&eacute;n&eacute;ficier d&rsquo;un CIF doit se rapprocher de l&rsquo;UNAGECIF afin de conna&icirc;tre les modalit&eacute;s pratiques et les conditions de sa demande, et se faire remettre ou adresser un dossier de demande de CIF.</p>\r\n<p>\r\n	<strong>L&rsquo;autorisation d&rsquo;absence</strong></p>\r\n<p>\r\n	D&egrave;s lors que sa formation se fait en partie sur son temps de travail, le salari&eacute; doit faire signer par son manager une autorisation d&rsquo;absence, qui pr&eacute;cise l&rsquo;intitul&eacute; de la formation, la date de d&eacute;but de formation, l&rsquo;agenda de la formation, sa dur&eacute;e et l&rsquo;organisme de formation. Le salari&eacute; doit adresser &agrave; son manager sa demande d&rsquo;absence au plus tard 120 jours &agrave; l&rsquo;avance pour une absence de plus de six mois et au plus tard 60 jours &agrave; l&rsquo;avance pour une formation de moins de six mois.<br />\r\n	Cette autorisation d&rsquo;absence se mat&eacute;rialise sur un document fourni par l&rsquo;UNAGECIF.<br />\r\n	Le manager b&eacute;n&eacute;ficie d&rsquo;un d&eacute;lai de 30 jours pour donner son autorisation d&rsquo;absence. Il lui est possible de reporter l&rsquo;autorisation d&rsquo;absence pour des raisons de service. Dans ce cas, le report maximum est de neuf mois.</p>\r\n<p>\r\n	<strong>La demande de prise en charge</strong></p>\r\n<p>\r\n	Le salari&eacute; doit ensuite recontacter l&rsquo;UNAGECIF pour la prise en charge financi&egrave;re de sa formation. Un dossier lui est alors transmis soit par courrier, soit directement dans les locaux de l&rsquo;UNAGECIF. L&rsquo;attention du salari&eacute; est attir&eacute;e sur le fait que les co&ucirc;ts p&eacute;dagogiques de formation sont plafonn&eacute;s.</p>\r\n<p>\r\n	Apr&egrave;s v&eacute;rification de sa compl&eacute;tude et de sa recevabilit&eacute;, le dossier est transmis au comit&eacute; paritaire professionnel de l&rsquo;UNAGECIF (CPP), selon le calendrier disponible sur le site internet de l&rsquo;organisme. Un premier courrier est adress&eacute; par l&rsquo;UNAGECIF au salari&eacute;, lui pr&eacute;cisant que son dossier a &eacute;t&eacute; transmis au comit&eacute; paritaire.</p>\r\n<p>\r\n	Apr&egrave;s r&eacute;union du comit&eacute; paritaire, un courrier est envoy&eacute; au salari&eacute; et &agrave; son employeur, pr&eacute;cisant l&rsquo;acceptation ou le refus de prise en charge.<br />\r\n	En cas de refus, le courrier en pr&eacute;cise les motifs. L&rsquo;autorisation d&rsquo;absence sign&eacute;e par le manager est alors caduque.</p>\r\n<p>\r\n	En cas d&rsquo;acceptation de la prise en charge, le courrier pr&eacute;cise, le cas &eacute;ch&eacute;ant, la part des frais p&eacute;dagogiques qui devra &ecirc;tre financ&eacute;e par le salari&eacute;.</p>\r\n', 38),
+(21, 'Liens ou documents utiles', '<ul>\r\n	<li>\r\n		<a href="http://www.unagecif.com/" target="_blank">http://www.unagecif.com/</a></li>\r\n</ul>\r\n', 39),
+(22, 'Description', '<p>\r\n	Le projet professionnel du salari&eacute; est discut&eacute; lors de l&rsquo;entretien de professionnalisation avec son manager. Le salari&eacute; et son manager peuvent alors convenir de l&rsquo;accompagnement de ce projet par des actions de formation.</p>\r\n<p>\r\n	Lorsque celles-ci sont indispensables &agrave; l&rsquo;adaptation du salari&eacute; &agrave; son poste de travail ou au maintien du salari&eacute; dans son emploi, les actions de formation sont r&eacute;alis&eacute;es dans le cadre du plan de formation, en cat&eacute;gorie 1 (adaptation et maintien dans l&rsquo;emploi).<br />\r\n	L&rsquo;&eacute;laboration de ce volet du plan de formation rel&egrave;ve ainsi de la responsabilit&eacute; de l&rsquo;employeur et les formations qu&rsquo;il contient rev&ecirc;tent pour le salari&eacute; un caract&egrave;re obligatoire. Elles sont r&eacute;alis&eacute;es sur le temps de travail et r&eacute;mun&eacute;r&eacute;es.</p>\r\n<p>\r\n	Le manager peut &eacute;galement proposer au salari&eacute; d&rsquo;accompagner son projet professionnel par des actions de formation qui lui permettront de d&eacute;velopper ses comp&eacute;tences. Ces actions, non indispensables &agrave; la tenue du poste mais qui permettent a minima au salari&eacute; d&rsquo;am&eacute;liorer son efficacit&eacute; professionnelle sont r&eacute;alis&eacute;es dans le cadre du plan de formation, en cat&eacute;gorie 2 (d&eacute;veloppement des comp&eacute;tences).</p>\r\n<p>\r\n	Cette partie du plan de formation rel&egrave;ve &eacute;galement de la responsabilit&eacute; de l&rsquo;employeur mais ne porte aucun caract&egrave;re obligatoire pour le salari&eacute;. Une convention entre salari&eacute; et employeur est &eacute;tablie pour les formations de ce type, qui peuvent se d&eacute;rouler en partie en dehors du temps de travail.</p>\r\n', 46),
+(23, 'Qui est concerné par le plan de formation ?', '<p>\r\n	Tous les salari&eacute;s de l&rsquo;entreprise sont concern&eacute;s par le plan de formation. L&rsquo;employeur est n&eacute;anmoins libre de choisir les salari&eacute;s qui b&eacute;n&eacute;ficieront d&rsquo;actions de formation dans le cadre du plan, sous r&eacute;serve notamment du principe de non-discrimination.</p>\r\n', 47),
+(24, 'Construction du plan de formation', '<p>\r\n	Le Plan de Formation d&rsquo;Entreprise RTE (PFE) et les Plans de Formation d&rsquo;Unit&eacute;s (PFU) dont il fait la synth&egrave;se correspondent &agrave; l&rsquo;ensemble des actions de formation retenues par RTE et r&eacute;sultent &agrave; la fois d&rsquo;une d&eacute;marche &laquo;&nbsp;collective&nbsp;&raquo;, li&eacute;e aux besoins de l&rsquo;entreprise, et d&rsquo;une d&eacute;marche &laquo;&nbsp;individuelle&nbsp;&raquo; li&eacute;e aux souhaits de professionnalisation des salari&eacute;s.</p>\r\n<p>\r\n	Le plan de formation de l&rsquo;ann&eacute;e n+1 se construit entre janvier et avril de l&rsquo;ann&eacute;e n, au fil des entretiens de professionnalisation saisis dans l&rsquo;outil @rtesis. Il est ensuite adapt&eacute; par chaque Unit&eacute; en fonction de ses besoins sp&eacute;cifiques, puis discut&eacute; au sein des instances repr&eacute;sentatives du personnel entre octobre et d&eacute;cembre de l&rsquo;ann&eacute;e n.</p>\r\n<p>\r\n	Des actions de formation non planifi&eacute;es l&rsquo;ann&eacute;e pr&eacute;c&eacute;dente peuvent n&eacute;anmoins &ecirc;tre d&eacute;cid&eacute;es par les managers, pour r&eacute;pondre &agrave; des besoins non pr&eacute;visibles l&rsquo;ann&eacute;e pr&eacute;c&eacute;dente&nbsp; &agrave; l&rsquo;occasion par exemple de mutations ou recrutements.</p>\r\n', 48),
+(25, 'A qui s’adressent les formations accompagnant la promotion ?', '<p>\r\n	Les formations d&rsquo;accompagnement de la promotion concernent les salari&eacute;s nouvellement promus dans les coll&egrave;ges Ma&icirc;trise ou Cadre.</p>\r\n', 50),
+(26, 'Le détail des offres de FPCAE et FPMAE', '<p>\r\n	Les offres propos&eacute;es sur ce dispositif correspondent &agrave; un besoin en comp&eacute;tences pr&eacute;cis, au sein d&rsquo;une unit&eacute;. La publication d&rsquo;un emploi maitrise ou cadre dans la Bourse de l&rsquo;Emploi (Branche des IEG) est assortie de la formation promotionnelle n&eacute;cessaire pour y acc&eacute;der. Pour postuler, le salari&eacute; doit obtenir l&rsquo;accord de son manager via le mod&egrave;le 6. La s&eacute;lection du candidat est&nbsp;faite par l&rsquo;unit&eacute; d&rsquo;accueil. Apr&egrave;s une &eacute;ventuelle p&eacute;riode de pr&eacute;paration, l&rsquo;&eacute;cole confirmera ou non l&rsquo;admission du candidat &agrave; son cursus dipl&ocirc;mant.</p>\r\n', 51),
+(27, 'Le détail des offres de CIC et CIM', '<p>\r\n	Les offres propos&eacute;es ciblent un emploi g&eacute;n&eacute;rique, elles sont diffus&eacute;es sur le site internet de RTE (offres de RTE) et dans la Bourse de l&#39;emploi (offres de l&rsquo;ensemble des entreprises du groupe EDF).. La candidature des salari&eacute;s est libre et ne n&eacute;cessite pas de validation manag&eacute;riale. La s&eacute;lection se d&eacute;roule en deux temps&nbsp;: une &eacute;preuve de synth&egrave;se (phase 1) puis un entretien devant un comit&eacute; de s&eacute;lection de l&rsquo;entreprise d&rsquo;accueil (phase 2). Apr&egrave;s une &eacute;ventuelle p&eacute;riode de pr&eacute;paration, l&rsquo;&eacute;cole confirmera ou non l&rsquo;admission du candidat &agrave; son cursus dipl&ocirc;mant.</p>\r\n', 52),
+(28, 'Hébergement', '<p>\r\n	Les listes d&#39;h&ocirc;tels pr&eacute;sent&eacute;s ici sont communiqu&eacute;es &agrave; titre indicatif.<br />\r\n	Pensez &agrave; r&eacute;server d&egrave;s r&eacute;ception de votre convocation compte-tenu de la forte fr&eacute;quentation des<br />\r\n	h&ocirc;tels &agrave; certaines dates de l&#39;ann&eacute;e (salons ou autres manifestations).</p>\r\n<p>\r\n	Les centres de formations sont facilement accessibles en transport en commun, consultez le plan d&#39;acc&egrave;s joint &agrave; votre dossier de formation.</p>\r\n', 53),
+(29, 'Transports', '<p>\r\n	D&egrave;s votre inscription &agrave; l&#39;une de nos formations, nous vous conseillons de r&eacute;server votre titre de transport.<br />\r\n	Quelques sites internet pour faciliter l&#39;organisation de votre d&eacute;placement :</p>\r\n<ul>\r\n	<li>\r\n		<a href="http://www.voyages-sncf.com" target="_blank">www.voyages-sncf.com</a></li>\r\n	<li>\r\n		<a href="http://www.airfrance.fr" target="_blank">www.airfrance.fr</a></li>\r\n	<li>\r\n		<a href="http://www.ter-sncf.com">www.ter-sncf.com</a></li>\r\n	<li>\r\n		<a href="http://www.tcl.fr" target="_blank">www.tcl.fr</a></li>\r\n</ul>\r\n', 54),
+(30, 'Centres de formations', '<p>\r\n	<strong>Lille</strong></p>\r\n<p>\r\n	<a href="/files/plan_acces_lille.pdf" target="_blank">T&eacute;lechargez le plan d&#39;acc&egrave;s du centre de formation de Lille</a></p>\r\n<p>\r\n	<strong>Nanterre</strong></p>\r\n<p>\r\n	<a href="/files/plan_acces_nanterre.pdf" target="_blank">T&eacute;lechargez le plan d&#39;acc&egrave;s du centre de formation de Nanterre</a></p>\r\n<p>\r\n	<strong>Toulouse</strong></p>\r\n<p>\r\n	<a href="http://plan_acces_toulouse.pdf" target="_blank">T&eacute;lechargez le plan d&#39;acc&egrave;s du centre de formation de Toulouse</a></p>\r\n<p>\r\n	<strong>Lyon</strong></p>\r\n<p>\r\n	<a href="/files/plan_acces_lyon_partdieu.pdf" target="_blank">T&eacute;lechargez le plan d&#39;acc&egrave;s du centre de formation de Lyon Part-dieu</a><br />\r\n	<a href="/files/plan_acces_lyon_jonage.pdf" target="_blank">T&eacute;l&eacute;charger le plan d&#39;acc&egrave;s du site de formation de Lyon-Jonage</a><br />\r\n	<a href="/files/liste_hotels_lyon.pdf" target="_blank">Liste des h&ocirc;tels &agrave; proximit&eacute; des sites de Lyon-Part Dieu et Lyon-Jonage</a></p>\r\n<p>\r\n	Apr&egrave;s les journ&eacute;es de formation, vous pouvez d&eacute;couvrir Lyon :<a href="http://www.lyon-france.com" target="_blank"> www.lyon-france.com</a></p>\r\n', 55),
+(31, 'Dispositions communes', '<p>\r\n	Veuillez vous munir :</p>\r\n<ul>\r\n	<li>\r\n		de votre convocation</li>\r\n	<li>\r\n		d&#39;une pi&egrave;ce d&#39;identit&eacute;</li>\r\n	<li>\r\n		de vos &eacute;quipements de protection individuelle</li>\r\n	<li>\r\n		d&#39;un n&eacute;cessaire de prise de notes</li>\r\n</ul>\r\n<p>\r\n	Pour les stages r&eacute;alis&eacute;s &agrave; Lyon :</p>\r\n<p>\r\n	Veuillez vous pr&eacute;senter &agrave; l&#39;accueil du DPS au 6&egrave;me &eacute;tage du b&acirc;timent. Un badge d&#39;acc&egrave;s aux salles de formations vous y sera remis.</p>\r\n', 56),
+(35, ' Les Dispositifs programmés de formation en ligne', '<ul>\r\n	<li>\r\n		Le DPS pilote&nbsp; un ensemble de modules de formation ou d&rsquo;&eacute;valuation, des pr&eacute;requis en ligne&nbsp; qui s&rsquo;inscrivent en compl&eacute;ment d&rsquo;un stage en pr&eacute;sentiel.</li>\r\n	<li>\r\n		Ces dispositifs sont&nbsp; &agrave; acc&egrave;s r&eacute;serv&eacute;s et suivis par un formateur selon des modalit&eacute;s qui vous seront transmises lors de votre demande d&rsquo;inscription &agrave; ce type de stage.</li>\r\n</ul>\r\n', 61),
+(37, 'Après la formation', '<p>\r\n	Vous avez particip&eacute; &agrave; un stage avec le D&eacute;partement Professionnalisation des Salari&eacute;s. La documentation<br />\r\n	de ce stage reste &agrave; votre disposition sur notre GED.</p>\r\n<p>\r\n	Pour y acc&eacute;der simplement :</p>\r\n<ul>\r\n	<li>\r\n		Utilisez les moteurs de recherche ci-dessous et validez.</li>\r\n	<li>\r\n		Les liens r&eacute;sultant de votre s&eacute;lection vous ouvriront les portes de la GED.</li>\r\n	<li>\r\n		Identifiez vous.</li>\r\n	<li>\r\n		Le r&eacute;pertoire des documents du stage choisi est &agrave; votre disposition.</li>\r\n</ul>\r\n', 63),
+(38, 'Tests de pré-requis à un stage', '<p>\r\n	Suite &agrave; une demande de formation, il vous a &eacute;t&eacute; demand&eacute; de v&eacute;rifier que vous poss&eacute;dez les pr&eacute;-requis necessaires pour suivre ce stage.<br />\r\n	L&#39;objectif est de vous permettre&nbsp; de suivre avec efficacit&eacute; cette formation, et d&#39;acqu&eacute;rir les comp&eacute;tences vis&eacute;es.</p>\r\n<p>\r\n	Pour acc&eacute;der &agrave; l&#39;espace d&#39;&eacute;valuation des pr&eacute;-requis cliquez sur le bouton &ccedil;i dessous puis identifiez vous avec votre NNI et mot de passe window.</p>\r\n<p>\r\n	<a href="http://e-formation" target="_blank">Acc&egrave;s &agrave; l&#39;espace e-formation</a></p>\r\n', 64),
+(39, 'Enquête : Satisfait ou pas ?', '<p>\r\n	Vous venez de participer &agrave; un stage sur un de nos sites et votre formateur vous &agrave; demand&eacute; de nous faire part en ligne de votre point de vue sur son d&eacute;roulement.</p>\r\n<p>\r\n	S&eacute;lectionnez votre code stage et de session, entrez le mot de passe qu&#39;il vous a transmis et validez.</p>\r\n<p>\r\n	Vos r&eacute;ponses sont anonymes et nous permettrons de faire progresser la qualit&eacute; de nos formations.</p>\r\n<p>\r\n	<strong>Merci</strong></p>\r\n', 65),
+(40, 'Accès à l''espace e-formation', '<p>\r\n	<a href="http://e-formation" target="_blank">Cliquez ici pour acc&eacute;der &agrave; l&#39;espace e-formation</a></p>\r\n', 66),
+(41, 'Les modules de formation libre accès', '<p>\r\n	Nous vous proposons&nbsp; un ensemble de supports de formation autoportant dont l&rsquo;objectif est de vous fournir en toute libert&eacute;&nbsp; des connaissances&nbsp; sur un sujet particulier.</p>\r\n', 67),
+(42, 'ALERTE: reprogrammation des sessions sur LYON JONAGE', '<p>\r\n	<em>Article du 06/04/2012</em></p>\r\n<p>\r\n	Le site de LYON-JONAGE sera op&eacute;rationnel &agrave; partir de JUILLET 2012, en cons&eacute;quence nous sommes contraints de reprogammer les sessions qui &eacute;taient planifi&eacute;es en MAI , JUIN et d&eacute;but JUILLET sur ce nouveau site.</p>\r\n<p>\r\n	Le DPS reprogramme les sessions selon les disponibilit&eacute;s de nos ressources lors du second semestre 2012 soit en Janvier et F&eacute;vrier 2013.</p>\r\n<p>\r\n	Tous les salar&eacute;s inscrits sont automatiquement inscrits aux nouvelles sessions planifi&eacute;es, un mail d&#39;information leur est transmis, ainsi qu&#39;&agrave; leur manager, d&egrave;s que les gestes sont r&eacute;alis&eacute;s dans l&#39;application ARTESIS.</p>\r\n', 68),
+(43, 'Nouveautés', '<p>\r\n	<em>Article du 31/05/2012</em></p>\r\n<p>\r\n	Une nouvelle formation est disponible dans le domaine Sant&eacute; S&eacute;curit&eacute; Qualit&eacute; de Vie au Travail &quot;Le chemin de la Pr&eacute;vention Sant&eacute; S&eacute;curit&eacute;&quot; (code F1000). Cette formation est destin&eacute;e &agrave; tout nouvel embauch&eacute; (quelque soit son m&eacute;tier) ainsi qu&#39;aux apprentis. Elle est int&eacute;gralement en E Learning, sa dur&eacute;e est de 0.5 jour et son contenu aborde les points suivants:</p>\r\n<ul>\r\n	<li>\r\n		La politique SST de RTE,</li>\r\n	<li>\r\n		- Les acteurs de la Pr&eacute;vention,</li>\r\n	<li>\r\n		- le cadre r&eacute;glementaire,</li>\r\n	<li>\r\n		- Les risques identifi&eacute;s dans le document unique de RTE.</li>\r\n</ul>\r\n<p>\r\n	Pour toute information compl&eacute;mentaire, vous pouvez consulter la fiche de stage. Si vous souhaitez r&eacute;aliser cette formation, vous pouvez vous inscrire sur la session qui a &eacute;t&eacute; cr&eacute;&eacute;e dans ARTESIS.</p>\r\n', 69),
+(44, 'Evolutions de l''offre de formation Maintenance Contrôle Electrique', '<p>\r\n	<em>Article du 19/09/2012</em></p>\r\n<p>\r\n	Vous trouverez une synth&egrave;se des derni&egrave;res nouveaut&eacute;s et des perspectives inscrites dans le programme d&rsquo;activit&eacute;s des ann&eacute;es 2012 - 2013 ci-dessous, sous la rubrique &quot; Actualit&eacute;s des domaines g&eacute;r&eacute;s par le P&ocirc;le - Maintenance Contr&ocirc;le Electrique - Gestion de l&#39;offre de formation CE &#39;.</p>\r\n', 70),
+(45, 'Cartographie de l''offre', '<p>\r\n	<em>Article du 19/09/2012</em></p>\r\n<p>\r\n	Sous le Portail, vous trouverez d&eacute;sormais les offres de formation &quot; Maintenance CE &quot; et &quot; Maintenance TCM - TCD &quot; regroup&eacute;es sous un m&ecirc;me cartographie :&nbsp;&nbsp; Maintenance TCD - CE - TCM</p>\r\n', 71),
+(46, 'Sessions expérimentales au second semestre 2012', '<p>\r\n	<em>Article du 19/09/2012</em></p>\r\n<ul>\r\n	<li>\r\n		stage FS43P&nbsp; &quot; Maintenance 3 des syst&egrave;mes Electre Grand Poste Alstom DS-AGILE &quot;&nbsp;&nbsp; du 10 au 21/09/12, dans les locaux d&#39;Alstom &agrave; Castelnau</li>\r\n	<li>\r\n		stage F102&nbsp; &quot; Initiation Contr&ocirc;le Electrique &quot;&nbsp;&nbsp; du 17/09 au 23/11/12, dans les locaux du DPS &agrave; Lyon</li>\r\n	<li>\r\n		stage F112&nbsp; &quot; Perfectionnement 2 Contr&ocirc;le Electrique &quot;, du 3 au 14/12/12, dans les locaux du DPS &agrave; Lyon</li>\r\n	<li>\r\n		stage F902&nbsp; &quot;Renforcer ses comp&eacute;tences sur le mat&eacute;riel du Palier 2000 &quot;, du 12 au 15/11/12, dans les locaux du DPS &agrave; Lyon</li>\r\n</ul>\r\n', 72),
+(47, 'Développements en cours', '<p>\r\n	<em>Article du 19/09/2012</em></p>\r\n<p>\r\n	Nous travaillons actuellement sur la conception des stages suivants :</p>\r\n<ul>\r\n	<li>\r\n		<strong>F302P&nbsp; &quot; Fondamentaux CE pour salari&eacute;s TCM &ndash; TCD &quot;</strong><br />\r\n		formation s&rsquo;inscrivant dans le cursus de poly-comp&eacute;tence<br />\r\n		session exp&eacute;rimentale pr&eacute;vue du 25 au 29/03/13<br />\r\n		&nbsp;</li>\r\n	<li>\r\n		<strong>FS817&nbsp; &quot; Protection diff&eacute;rentielle de barres num&eacute;rique REB670 d&rsquo;ABB&nbsp; &quot;</strong><br />\r\n		formation constructeur qui sera dispens&eacute;e en nos locaux de Lyon<br />\r\n		session exp&eacute;rimentale pr&eacute;vue du 11 au 14/03/13<br />\r\n		&nbsp;</li>\r\n	<li>\r\n		<strong>FS878&nbsp; &quot; Sp&eacute;cialiste sur les &eacute;quipements CDE de SELTA &quot;</strong><br />\r\n		formation anim&eacute;e par le DPS,&nbsp; qui sera dispens&eacute;e en nos locaux de Lyon<br />\r\n		session exp&eacute;rimentale pr&eacute;vue du 12 au 15/11/13<br />\r\n		&nbsp;</li>\r\n	<li>\r\n		<strong>S842&nbsp; &quot; Maintenance pr&eacute;ventive des serveurs T2000 &quot;</strong><br />\r\n		refonte du stage actuel, pour tenir compte des r&eacute;centes &eacute;volutions du mat&eacute;riel<br />\r\n		formation constructeur LOGICA, anim&eacute;e en ses locaux de Grenoble<br />\r\n		dates de la session exp&eacute;rimentale en 2013 non encore d&eacute;finies<br />\r\n		&nbsp;</li>\r\n	<li>\r\n		<strong>F843&nbsp; &quot; Exploitation de l&rsquo;application de t&eacute;l&eacute;rel&egrave;ve T2000 &quot;</strong><br />\r\n		formation anim&eacute;e par le DPS,&nbsp; qui sera dispens&eacute;e en nos locaux de Lyon<br />\r\n		session exp&eacute;rimentale pr&eacute;vue du 2 au 6/12/13<br />\r\n		&nbsp;</li>\r\n	<li>\r\n		<strong>FE43S&nbsp; &quot; Maintenance 3 des syst&egrave;mes Electre GP Alstom SPACE &quot;</strong><br />\r\n		formation anim&eacute;e par le DPS,&nbsp; qui sera dispens&eacute;e en nos locaux de Lyon<br />\r\n		session exp&eacute;rimentale pr&eacute;vue du 7 au 18/01/13<br />\r\n		&nbsp;</li>\r\n	<li>\r\n		<strong>FE53&nbsp; &quot; Maintenance 3 des syst&egrave;mes Electre GP Siemens &quot;</strong><br />\r\n		formation anim&eacute;e par le DPS,&nbsp; qui sera dispens&eacute;e en nos locaux de Lyon<br />\r\n		session exp&eacute;rimentale pr&eacute;vue du 18 au 29/03/13<br />\r\n		&nbsp;</li>\r\n	<li>\r\n		<strong>FE45&nbsp; &quot; Supervision, administration et t&eacute;l&eacute;maintenance des syst&egrave;mes CCN&nbsp; &quot;</strong><br />\r\n		un seul stage, pour l&rsquo;ensemble des syst&egrave;mes GP et postes &ldquo;d&rdquo; rencontr&eacute;s<br />\r\n		formation anim&eacute;e par le DPS,&nbsp; qui sera dispens&eacute;e en nos locaux de Lyon<br />\r\n		session exp&eacute;rimentale pr&eacute;vue du 2 au 13/09/13</li>\r\n</ul>\r\n', 73),
+(48, 'Projets développements à venir', '<p>\r\n	<em>Article du 03/07/2012</em></p>\r\n<p>\r\n	Pr&eacute;vu pour 2013 :</p>\r\n<ul>\r\n	<li>\r\n		FTF16: interfonctionnement de la configuration</li>\r\n	<li>\r\n		FTD15 Maintenance des &eacute;quipements RMS de dispatching (stage avec contr&ocirc;le de pr&eacute;-requis)</li>\r\n</ul>\r\n<p>\r\n	Sessions exp&eacute;rimentales &agrave; venir au second semestre 2012 :</p>\r\n<ul>\r\n	<li>\r\n		FTM20 Maintenance r&eacute;gionale des &eacute;quipements ALCATEL LUCENT du r&eacute;seau ROSE (stage avec contr&ocirc;le de pr&eacute;-requis pouvant n&eacute;cessiter suivant les r&eacute;sultats obtenus au tests de pr&eacute;-requis le suivi d&#39;un module E-learning avant de venir en stage)</li>\r\n	<li>\r\n		FTE90 Telemaintenance des &eacute;quipements de gdps (stage avec contr&ocirc;le de pr&eacute;-requis)</li>\r\n	<li>\r\n		FTD10 Interfonctionnement des &eacute;quipements de dispatching (stage avec contr&ocirc;le de pr&eacute;-requis)</li>\r\n	<li>\r\n		FTD90 Maitrise des interventions aux dispatchings (stage avec contr&ocirc;le de pr&eacute;-requis)</li>\r\n</ul>\r\n<p>\r\n	<strong>Attention il est n&eacute;cessaire d&#39;avoir suivi le FTF10 avant de suivre le FTF14.</strong></p>\r\n', 74),
+(49, 'TCM TCD', '<p>\r\n	<em>Article du 03/07/2012</em></p>\r\n<ul>\r\n	<li>\r\n		Le stage 7716 passe de 3,5 jours &agrave; 4 jours pour ing&eacute;rer le CORT, ROSE TCM, la VCT et les gestes de maintenance sur le SGA.</li>\r\n	<li>\r\n		Le stage S285 RSTN&nbsp; passe sur 1,5&nbsp; jours &agrave; 2 jours (int&eacute;gration de la conf de l&rsquo;IGA RSTN, r&eacute;alisation d&rsquo;une install compl&egrave;te)</li>\r\n	<li>\r\n		Le stage S232 G&eacute;n&eacute;ralit&eacute;s TCM-TCD passe de 3 jours &agrave; 4 jours (int&eacute;gration du CORT, la VCT, le traitement des incidents, les outils de gestion du patrimoine)</li>\r\n</ul>\r\n<p>\r\n	Et dans le S235: int&eacute;gration des FO multimode;</p>\r\n<p>\r\n	Les stages enti&egrave;rement E-Learning FTFE1 &quot;Fondamentaux sur les supports de transmission &agrave; RTE&quot; et FTFE2 &quot;Fondamentaux TCP/IP&quot; sont d&eacute;sormais op&eacute;rationnels. Vous pouvez vous inscrire dans ARTESIS et recevoir ainsi les modalit&eacute;s de connexion.</p>\r\n', 75),
+(50, 'Actualités de la production des domaines', '<p>\r\n	<em>Article du 03/07/2012</em></p>\r\n<p>\r\n	Une nouvelle session du FTF10 &quot;Fondamentaux des TCM&quot; ajout&eacute;e en octobre. Il reste encore des places, inscivez-vous.</p>\r\n', 76),
+(51, 'L''offre formation aux couleurs du DPS', '<p>\r\n	<em>Article du 03/02/2012</em></p>\r\n<p>\r\n	<strong>Du Service Formation au D&eacute;partement Professionalisation des Salari&eacute;s l&#39;offre stage &eacute;volue.</strong></p>\r\n<p>\r\n	Certains l&#39;ont peut etre remarqu&eacute; le portail formation &eacute;volue progressivement pour int&eacute;grer la nouvelle organisation et son nouveau p&eacute;rim&egrave;tre. Le vocable DPS remplace service formation et l&#39;offre stage s&#39;&eacute;toffe ainsi une nouvelle carte stage SI &agrave; fait son apparition et progressivement nous r&eacute;alisons&nbsp; la refonte d&#39;autres cartes stages comme par exemple celles g&eacute;r&eacute;es par le p&ocirc;le M&eacute;tier transverse.</p>\r\n', 77),
+(52, 'Pré requis en ligne une année 2011 sur les chapeaux de roue', '<p>\r\n	<em>Article du 02/02/2012</em></p>\r\n<p>\r\n	<strong>La mise en oeuvre des pr&eacute; requis en ligne en 2011 &agrave; &eacute;t&eacute; un succ&egrave;s</strong></p>\r\n<p>\r\n	En effet, d&eacute;marr&eacute; en Mars la passation de pr&eacute; requis &agrave; concern&eacute; env 750 agents&nbsp; avec un taux de r&eacute;ussite de 87%</p>\r\n<p>\r\n	ces tests demandent en moyenne 20mn pour la passation et permettent aux agents et &agrave; leurs managers de v&eacute;rifier la pertinence d&#39;une participation &agrave; un stage.</p>\r\n', 78),
+(53, 'E- learning de nouvelles formations disponibles', '<p>\r\n	<em>Article du 01/02/2012</em></p>\r\n<p>\r\n	<strong>D&eacute;but 2012 plusieurs nouveau modules e-learning sont disponible au catalogue&nbsp; formation du DPS.</strong></p>\r\n<ul>\r\n	<li>\r\n		Pour les stages FTF10 FTF1 et FTF2 des modules en ligne sur les fondamentaux t&eacute;l&eacute;com&nbsp; supports de transmission et protocole Internet.</li>\r\n	<li>\r\n		Pour le stage F1000 les chemins de la pr&eacute;vention s&eacute;curit&eacute; et sant&eacute;&nbsp; Stage qui permet d&#39;acqu&eacute;rir les connaissances indispensables &agrave; l&#39;exercice de nos activit&eacute;s professionnelles au sein de RTE (politique, acteurs, m&eacute;tiers, risques r&eacute;glementations ).</li>\r\n	<li>\r\n		Pour Maintenance contr&ocirc;le electrique Une s&eacute;rie de module sur le Transformateur monophas&eacute; et triphas&eacute;</li>\r\n	<li>\r\n		Pour l&#39;exploitation&nbsp; l&#39;art de la manoeuvre</li>\r\n</ul>\r\n<p>\r\n	Ces modules de formation e-learning viennent compl&eacute;ter un catalogue qui s&#39;&eacute;toffe peu a peu.</p>\r\n', 79);
+INSERT INTO `blocs_texte` (`id`, `titre`, `contenu`, `bloc_id`) VALUES
+(54, 'Hébergement', '<p>\r\n	Les listes d&#39;h&ocirc;tels pr&eacute;sent&eacute;s ici sont communiqu&eacute;es &agrave; titre indicatif.<br />\r\n	Pensez &agrave; r&eacute;server d&egrave;s r&eacute;ception de votre convocation compte-tenu de la forte fr&eacute;quentation des<br />\r\n	h&ocirc;tels &agrave; certaines dates de l&#39;ann&eacute;e (salons ou autres manifestations).</p>\r\n<p>\r\n	Les centres de formations sont facilement accessibles en transport en commun, consultez le plan d&#39;acc&egrave;s joint &agrave; votre dossier de formation.</p>\r\n', 80),
+(55, 'Transports', '<p>\r\n	D&egrave;s votre inscription &agrave; l&#39;une de nos formations, nous vous conseillons de r&eacute;server votre titre de transport.<br />\r\n	Quelques sites internet pour faciliter l&#39;organisation de votre d&eacute;placement :</p>\r\n<ul>\r\n	<li>\r\n		<a href="http://www.voyages-sncf.com" target="_blank">www.voyages-sncf.com</a></li>\r\n	<li>\r\n		<a href="http://www.airfrance.fr" target="_blank">www.airfrance.fr</a></li>\r\n	<li>\r\n		<a href="http://www.ter-sncf.com" target="_blank">www.ter-sncf.com</a></li>\r\n	<li>\r\n		<a href="http://www.tcl.fr" target="_blank">www.tcl.fr</a></li>\r\n</ul>\r\n', 81),
+(56, 'Centres de formations', '<p>\r\n	<strong>Lyon</strong></p>\r\n<p>\r\n	<a href="/files/plan_acces_lyon_partdieu.pdf" target="_blank">T&eacute;lechargez le plan d&#39;acc&egrave;s du centre de formation de Lyon Part-dieu</a><br />\r\n	<a href="/files/plan_acces_lyon_jonage.pdf" target="_blank">T&eacute;l&eacute;charger le plan d&#39;acc&egrave;s du site de formation de Lyon-Jonage</a><br />\r\n	<a href="/files/liste_hotels_lyon.pdf" target="_blank">Liste des h&ocirc;tels &agrave; proximit&eacute; des sites de Lyon-Part Dieu et Lyon-Jonage</a></p>\r\n<p>\r\n	Apr&egrave;s les journ&eacute;es de formation, vous pouvez d&eacute;couvrir Lyon : <a href="http://www.lyon-france.com" target="_blank">www.lyon-france.com</a></p>\r\n', 82),
+(57, 'Bienvenue sur le wiki du DPS', '<p>\r\n	Un wiki interactif &agrave; but p&eacute;dagogique et uniquement p&eacute;dagogique sur la partie LexiqM&eacute;tiers. Concernant le programme OI, il doit &ecirc;tre consid&eacute;r&eacute; comme un outil de r&eacute;f&eacute;rence &agrave; l&#39;instar de la GED de RTE.</p>\r\n<p>\r\n	Vous trouverez donc ici :</p>\r\n<ul>\r\n	<li>\r\n		Le <strong>LexiqM&eacute;tiers</strong> : un glossaire qui vous permet d&#39;acc&eacute;der &agrave; la d&eacute;finition d&#39;un terme ou d&#39;une abbr&eacute;viation utilis&eacute; dans le contexte professionnel de RTE. Pour certains d&#39;entre eux, ils sont accompagn&eacute;s d&#39;un descriptif et d&#39;images.</li>\r\n	<li>\r\n		Les <strong>Fiches M&eacute;mos</strong> du programme OI</li>\r\n	<li>\r\n		<strong>Les R&egrave;gles de Saisie</strong> du programme OI</li>\r\n</ul>\r\n<p>\r\n	<a href="http://e-formation/wiki" target="_blank">Acc&egrave;s LexiqM&eacute;tiers / OI-Fiches m&eacute;mo / OI-R&egrave;gles de saisie</a></p>\r\n', 83),
+(58, '', '<p>\r\n	Il s&rsquo;est fix&eacute; 4 grands objectifs pour les ann&eacute;es &agrave; venir :</p>\r\n<p>\r\n	<strong>Am&eacute;liorer l&rsquo;offre et la qualit&eacute; des formations pour r&eacute;pondre aux besoins des m&eacute;tiers</strong></p>\r\n<p>\r\n	Ceci passe par la diversification de l&rsquo;offre de formation, par l&rsquo;innovation, le travail avec les unit&eacute;s lorsque des formations locales existent. Il faut aussi &ecirc;tre en veille sur les &eacute;volution technique des m&eacute;tiers en &eacute;tant partie prenante des diff&eacute;rents r&eacute;seaux d&rsquo;animation des directions.</p>\r\n<p>\r\n	Au sein du d&eacute;partement, nous nous devons d&rsquo;encourager les synergies transverses aux diff&eacute;rents m&eacute;tiers repr&eacute;sent&eacute;s.</p>\r\n<p>\r\n	<strong>S&rsquo;ouvrir &agrave; l&rsquo;interne et &agrave; l&rsquo;externe</strong></p>\r\n<p>\r\n	Etre pr&eacute;sent dans la vie des unit&eacute;s et dans les r&eacute;seaux d&rsquo;animation m&eacute;tier, mieux travailler avec l&rsquo;expertise et etre en veille sur les innovations p&eacute;dagogiques et technologiques sont des actions que le SF doit mettre en &oelig;uvre.</p>\r\n<p>\r\n	<strong>Se faire conna&icirc;tre et reconna&icirc;tre</strong></p>\r\n<p>\r\n	L&agrave; encore, il faut porter notre offre de formation, communiquer sur nos r&eacute;ussites et nos innovations, et mettre nos savoir faire au service des directions op&eacute;rationnelles.</p>\r\n<p>\r\n	<strong>D&eacute;velopper les comp&eacute;tences des formateurs</strong></p>\r\n<p>\r\n	C&rsquo;est essentiel pour la r&eacute;ussite des 3 axes pr&eacute;c&eacute;dents et cela passe par un recrutement adapt&eacute; et une formation, un accompagnent pour cr&eacute;er une &laquo; p&eacute;pini&egrave;re de talent &raquo;. Il faut aussi capitaliser et mutualiser l&rsquo;ensemble de nos connaissances.</p>\r\n', 84),
+(59, '', '<p>\r\n	Bienvenue !</p>\r\n<p>\r\n	Vous venez de rejoindre le D&eacute;partement Professionnalisation des Salari&eacute;s, au sein de la Direction des Ressources Humaines :<br />\r\n	je vous y souhaite tout d&rsquo;abord la bienvenue.</p>\r\n<p>\r\n	Dans un contexte de renouvellement important des comp&eacute;tences et du d&eacute;veloppement de comp&eacute;tences nouvelles et sp&eacute;cifiques, la professionnalisation repr&eacute;sente un enjeu tr&egrave;s important pour RTE, et pour chacun de ses salari&eacute;s.</p>\r\n<p>\r\n	Le DPS est responsable de l&#39;ensemble des dispositifs de professionnalisation mis &agrave; disposition des salari&eacute;s et des clients de RTE.</p>\r\n<p>\r\n	Chacun y a bien s&ucirc;r sa place pour notre r&eacute;ussite.&nbsp; &laquo;afin que le DPS soit un partenaire reconnu de tous dans l&rsquo;accompagnement du changement et l&rsquo;&eacute;volution des m&eacute;tiers&raquo;, et s&#39;inscrire dans nos valeurs de respect, d&rsquo;&eacute;quit&eacute;, de cr&eacute;ativit&eacute;, d&rsquo;exemplarit&eacute;, pour la satisfaction de nos b&eacute;n&eacute;ficiaires et clients.</p>\r\n<p>\r\n	Ce livret d&rsquo;accueil est con&ccedil;u pour faciliter votre int&eacute;gration au sein du D&eacute;partement.<br />\r\n	Il contient des informations sur l&rsquo;organisation et le fonctionnement du D&eacute;partement, des informations utiles au quotidien.<br />\r\n	Il ne saurait &ecirc;tre exhaustif. Alors, n&rsquo;h&eacute;sitez pas &agrave; solliciter votre entourage professionnel. Votre manager, et vos coll&egrave;gues r&eacute;pondront avec plaisir &agrave; vos interrogations.</p>\r\n<p>\r\n	Je vous souhaite de vous &eacute;panouir dans votre nouvelle activit&eacute;.</p>\r\n<p>\r\n	Jean-Pierre Lehu<br />\r\n	Directeur du D&eacute;partement Professionnalisation des Salari&eacute;s</p>\r\n<p>\r\n	<a href="/files/livret_accueil.pdf" target="_blank">T&eacute;l&eacute;charger le livret d&#39;accueil</a></p>\r\n', 86),
+(60, 'L’équipe du Département Professionnalisation des Salariés', '<p>\r\n	Le D&eacute;partement Professionnalisation des Salari&eacute;s est un des 4 d&eacute;partements du p&ocirc;le Op&eacute;rations de la DRH.<br />\r\n	Il regroupe 109 collaborateurs dont 78 formateurs r&eacute;partis dans les diff&eacute;rents p&ocirc;les de formation.<br />\r\n	Il est organis&eacute; de la mani&egrave;re suivante :</p>\r\n<ul>\r\n	<li>\r\n		<strong>La Direction</strong> compos&eacute;e du Directeur du D&eacute;partement et de son adjoint pour le pilotage g&eacute;n&eacute;ral du D&eacute;partement</li>\r\n	<li>\r\n		<strong>Le P&ocirc;le Pilotage et Achats</strong> pilote les achats de formation pour l&rsquo;ensemble de l&rsquo;entreprise, les ventes de prestations aux clients, le syst&egrave;me de management et le contr&ocirc;le interne du D&eacute;partement, le SI et la logistique du D&eacute;partement, la relation avec le SCF, et l&rsquo;animation op&eacute;rationnelle du r&eacute;seau des acteurs de la formation (gestionnaires de formation du DPS et des ARH, charg&eacute;s d&rsquo;analyse des ARH).</li>\r\n	<li>\r\n		<strong>Le P&ocirc;le Innovation et Ing&eacute;nierie P&eacute;dagogique</strong> est charg&eacute; de l&rsquo;administration du portail &laquo; SE FORMER &raquo;, de la conception/r&eacute;alisation de produits E-Learning, d&rsquo;outils&nbsp; d&rsquo;&eacute;valuation, et de l&rsquo;appui p&eacute;dagogique aux formateurs du D&eacute;partement</li>\r\n	<li>\r\n		<strong>Le P&ocirc;le Politique et Conseil</strong> est charg&eacute; de la production des plans de formation des Fonctions Centrales et de RTE, l&rsquo;&eacute;laboration des politiques et la n&eacute;gociation des accords d&rsquo;entreprise concernant la formation, l&rsquo;animation fonctionnelle du r&eacute;seau des acteurs de la formation (cadre formation des unit&eacute;s, charg&eacute;s d&rsquo;analyse des ARH) et la veille r&eacute;glementaire.</li>\r\n	<li>\r\n		<strong>7 P&ocirc;les de Formation</strong> comprenant : Un Chef de P&ocirc;le charg&eacute; de son pilotage et une Gestionnaire de Formation charg&eacute;e de l&rsquo;ensemble de la gestion op&eacute;rationnelle des stages g&eacute;r&eacute;s par le P&ocirc;le (planification, gestion des inscriptions et convocations, cl&ocirc;ture des sessions&hellip;) et un corps de formateurs internes (formateurs chefs de projet, formateurs concepteurs ou formateurs).</li>\r\n</ul>\r\n<p>\r\n	Les P&ocirc;les de Formation du DPS ont en charge les cursus de professionnalisation d&rsquo;un certain nombre de &laquo; domaines professionnels &raquo; :</p>\r\n<ul>\r\n	<li>\r\n		<strong>P&ocirc;le Exploitation</strong> : Exploitation, Recherche d&eacute;veloppement et expertise, Appui et ing&eacute;nierie p&eacute;dagogique pour le m&eacute;tier Clients et March&eacute;s.</li>\r\n	<li>\r\n		<strong>P&ocirc;le Maintenance Courante Postes</strong> : Maintenance courante des installations postes HT et BT, Sant&eacute; s&eacute;curit&eacute; qualit&eacute; de vie au travail, Maintenance des lignes souterraines</li>\r\n	<li>\r\n		<strong>P&ocirc;le Maintenance Contr&ocirc;le Electrique</strong> : Maintenance TCD-CE-TCM (partie CE) des dispositifs de contr&ocirc;le commande dans les postes, ainsi que des mat&eacute;riels de comptage.</li>\r\n	<li>\r\n		<strong>P&ocirc;le Maintenance T&eacute;l&eacute;com Syst&egrave;me d&rsquo;Information</strong> : Maintenance TCD-CE-TCM (partie TCD et TCM), Syst&egrave;me d&rsquo;information et t&eacute;l&eacute;communication.</li>\r\n	<li>\r\n		<strong>P&ocirc;le Maintenance Sp&eacute;cialis&eacute;e Postes</strong> : Maintenance HT Postes (Maintenance 4 des appareils HT, PSEM, transformateurs de puissance, transformateurs de mesure, disjoncteurs, sectionneurs, certification SF6, Stages TST HTB).</li>\r\n	<li>\r\n		<strong>P&ocirc;le D&eacute;veloppement Ing&eacute;nierie R&eacute;seau, Maintenance Lignes</strong> : D&eacute;veloppement et Ing&eacute;nierie, Maintenance des Lignes A&eacute;riennes, Environnement.</li>\r\n	<li>\r\n		<strong>P&ocirc;le Management et m&eacute;tiers Transverses</strong> : Management, Ressources Humaines, Secr&eacute;tariat, Juridique, Communication et affaires publiques, Contr&ocirc;le de Gestion, Comptabilit&eacute;-fiscalit&eacute;, R&eacute;gulation financement tr&eacute;sorerie, Achats, Audit et contr&ocirc;le interne, D&eacute;veloppement de potentiel accompagnement d&rsquo;&eacute;volution ou de transition Immobilier et logistique, Clients et march&eacute;s.</li>\r\n</ul>\r\n', 87),
+(61, 'Description', '<p>\r\n	En r&egrave;gle g&eacute;n&eacute;rale, les dispositifs d&rsquo;accompagnement du projet professionnel du salari&eacute; sont fix&eacute;s lors de l&rsquo;entretien de professionnalisation et saisis en tant que &laquo;&nbsp;formation&nbsp;au plan &raquo; par le manager dans le SI Formation (@rtesis GRH et Formation) entre janvier et avril de l&rsquo;ann&eacute;e n-1. Il ne s&rsquo;agit &agrave; ce stade que d&rsquo;une pr&eacute;inscription qui concourt &agrave; l&rsquo;estimation des besoins de formation pour l&rsquo;ann&eacute;e suivante.</p>\r\n<p>\r\n	A partir d&rsquo;octobre de l&rsquo;ann&eacute;e n-1, des sessions de formation sont cr&eacute;&eacute;es dans l&rsquo;outil et vont permettre au salari&eacute; de confirmer ses besoins en s&rsquo;inscrivant &agrave; ces sessions. Son inscription devra imp&eacute;rativement &ecirc;tre valid&eacute;e par son manager avant d&rsquo;&ecirc;tre prise en compte par l&rsquo;outil.</p>\r\n<p>\r\n	Lorsqu&rsquo;un besoin de formation d&rsquo;un salari&eacute; n&rsquo;avait pas &eacute;t&eacute; identifi&eacute; lors de la campagne annuelle d&rsquo;entretien de professionnalisation, le salari&eacute; peut s&rsquo;inscrire sur l&rsquo;outil @rtesis en &laquo;&nbsp;hors plan&nbsp;&raquo;. De la m&ecirc;me mani&egrave;re que pr&eacute;c&eacute;demment, cette inscription devra &ecirc;tre valid&eacute;e par son manager avant d&rsquo;&ecirc;tre prise en compte par l&rsquo;outil.</p>\r\n', 88),
+(62, 'Cas des formations sur DIF', '<p>\r\n	Les formations en DIF ne font pas l&rsquo;objet de pr&eacute;visions n&eacute;cessitant des pr&eacute;inscriptions dans @rtesis lors des entretiens de professionnalisation. Les demandes de formation au titre du DIF se font effectivement au fil de l&rsquo;eau, tout au long de l&rsquo;ann&eacute;e.</p>\r\n<p>\r\n	Le salari&eacute; dont la demande de formation au titre du DIF a &eacute;t&eacute; accept&eacute;e par son manager, acceptation mat&eacute;rialis&eacute;e par un courrier, doit se rapprocher de son correspondant formation pour l&rsquo;&eacute;laboration d&rsquo;une convention tripartite, l&rsquo;&eacute;ventuelle commande de prestation et l&rsquo;inscription.</p>\r\n', 89),
+(63, 'Cas des formations en CIF', '<p>\r\n	Les inscriptions aux formations r&eacute;alis&eacute;es dans le cadre du CIF sont &agrave; faire directement par le salari&eacute; avec l&rsquo;aide du conseiller de l&rsquo;UNAGECIF.</p>\r\n', 90),
+(64, 'Liens utiles', '<ul>\r\n	<li>\r\n		<a href="https://www.elsatis.fr/jFoedRTE/#" target="_blank">Outil @rtesis GRH et Formation</a></li>\r\n	<li>\r\n		<a href="http://intranet.rte-france.com/sites/RteNet/metiers/Ressources-Humaines/Parcours%20professionnel/Entretiens/Guide%20utilisateurs%20de%20l%27application%20GRH@rtesis/Guide-ARTESIS-GRH-Formation/Lanceur_Didacticiel_Foederis_2012.htm" target="_blank">Didacticiel d&#39;utilisation&nbsp;de l&#39;application GRH@rtesi</a>s</li>\r\n	<li>\r\n		<a href="http://intranet.rte-france.com/sites/RteNet/metiers/Ressources-Humaines/Parcours%20professionnel/Entretiens/fiches_memo_entretiens_2012_40rtesis_-_salaries.pdf" target="_blank">M&eacute;mo pour l&rsquo;utilisation de @rtesis GRH et Formation &ndash; partie salari&eacute;</a></li>\r\n	<li>\r\n		<a href="http://intranet.rte-france.com/sites/RteNet/metiers/Ressources-Humaines/Parcours%20professionnel/Entretiens/fiches_memo_entretiens_2012_40rtesis_-_managers.pdf" target="_blank">M&eacute;mo pour l&rsquo;utilisation de @rtesis GRH et Formation &ndash; partie manager</a></li>\r\n</ul>\r\n', 91);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `blocs_video`
+--
+
+DROP TABLE IF EXISTS `blocs_video`;
+CREATE TABLE IF NOT EXISTS `blocs_video` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `caption` text,
+  `path` text NOT NULL,
+  `bloc_id` int(11) unsigned NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `droits`
+--
+
+DROP TABLE IF EXISTS `droits`;
+CREATE TABLE IF NOT EXISTS `droits` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `droit` varchar(100) NOT NULL,
+  `utilisateur_id` int(10) unsigned NOT NULL,
+  `rubrique_id` smallint(5) unsigned DEFAULT NULL,
+  `page_id` smallint(5) unsigned DEFAULT NULL,
+  `date_creation` int(11) NOT NULL,
+  `date_modification` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `utilisateur_id` (`utilisateur_id`),
+  KEY `droit` (`droit`),
+  KEY `rubrique_id` (`rubrique_id`),
+  KEY `page_id` (`page_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=83 ;
+
+--
+-- Contenu de la table `droits`
+--
+
+INSERT INTO `droits` (`id`, `droit`, `utilisateur_id`, `rubrique_id`, `page_id`, `date_creation`, `date_modification`) VALUES
+(68, 'contributeur', 1, 0, NULL, 1351785695, 1351785695),
+(82, 'contributeur', 1, 0, NULL, 1351787392, 1351787392);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `migration`
+--
+
+DROP TABLE IF EXISTS `migration`;
+CREATE TABLE IF NOT EXISTS `migration` (
+  `type` varchar(25) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `migration` varchar(100) NOT NULL DEFAULT ''
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Contenu de la table `migration`
+--
+
+INSERT INTO `migration` (`type`, `name`, `migration`) VALUES
+('app', 'default', '001_create_utilisateurs'),
+('app', 'default', '002_create_pages'),
+('app', 'default', '003_create_rubriques'),
+('app', 'default', '004_create_droits'),
+('app', 'default', '005_insertion_utilisateurs'),
+('app', 'default', '006_create_revisions'),
+('app', 'default', '007_create_blocs'),
+('module', 'blocimage', '001_create_image'),
+('module', 'bloctexte', '001_create_blocs_textes'),
+('module', 'blocvideo', '001_create_video');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `pages`
+--
+
+DROP TABLE IF EXISTS `pages`;
+CREATE TABLE IF NOT EXISTS `pages` (
+  `id` smallint(6) unsigned NOT NULL AUTO_INCREMENT,
+  `titre` varchar(255) NOT NULL,
+  `url` varchar(255) NOT NULL,
+  `template` varchar(100) NOT NULL DEFAULT 'standard',
+  `position` smallint(5) unsigned NOT NULL,
+  `rubrique_id` smallint(5) unsigned NOT NULL,
+  `date_creation` int(11) NOT NULL,
+  `date_modification` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=69 ;
+
+--
+-- Contenu de la table `pages`
+--
+
+INSERT INTO `pages` (`id`, `titre`, `url`, `template`, `position`, `rubrique_id`, `date_creation`, `date_modification`) VALUES
+(1, 'Accueil', 'Accueil', 'accueil', 8, 0, 1352126526, 1352372065),
+(14, 'Bilan de compétences', 'Bilan-de-competences', 'standard', 2, 13, 1352213719, 1352470583),
+(15, 'Validation des acquis de l''expérience (VAE)', 'Validation-des-acquis-de-lexperience', 'standard', 3, 13, 1352215042, 1352880217),
+(16, 'Droit individuel à la formation (DIF)', 'Droits-individuels-a-la-formation-DIF', 'standard', 4, 13, 1352215058, 1352470583),
+(17, 'Formations promotionnelles et accompagnement de la promotion', 'Formation-promotionnelle-et-accompagnement-de-la-promotion', 'standard', 5, 13, 1352215068, 1352822768),
+(18, 'Congé individuel de formation (CIF)', 'Conge-individuel-de-formation-cif', 'standard', 6, 13, 1352215075, 1352470583),
+(20, 'S''inscrire en formation', 'Inscription-mode-demploi', 'standard', 1, 14, 1352215099, 1352372064),
+(23, 'Infos pratiques, accès, contact', 'Infos-pratiques-acces-contact', 'standard', 1, 16, 1352215234, 1352372065),
+(24, 'Zoom sur votre stage', 'Votre-stage-a-la-loupe', 'standard', 2, 16, 1352215245, 1352372065),
+(26, 'Mission et valeurs', 'Mission-et-valeurs', 'standard', 1, 19, 1352215642, 1352899155),
+(27, 'Livret d''accueil', 'Livret-daccueil', 'standard', 4, 19, 1352215655, 1352899155),
+(31, 'Editorial', 'Editorial', 'standard', 1, 3, 1352217595, 1352890466),
+(32, 'Actualités des projets', 'Dps-en-projets', 'standard', 3, 3, 1352217604, 1352890466),
+(34, 'Chiffres clef', 'Chiffres-clef', 'chiffres_clef', 2, 19, 1352217780, 1352899155),
+(37, 'Accès infos pratiques', 'Acces-infos-pratiques', 'standard', 3, 6, 1352217876, 1352372065),
+(38, 'Le métier de formateur', 'Le-metier-de-formateur', 'metier_formateur', 2, 6, 1352217889, 1352372065),
+(44, 'redirection espaces reserves', 'http://portail-formation/?redirect=espaces_reserves', 'standard', 1, 24, 1352304857, 1352372065),
+(47, 'Métiers techniques', 'Metiers-techniques', 'offre', 2, 5, 1352368883, 1352970814),
+(48, 'Management et métiers transverses', 'Offre-management-et-metiers-transverses', 'offre', 3, 5, 1352368896, 1352970814),
+(50, 'Contactez le DPS', 'contact', 'contact', 1, 25, 1352369181, 1352372065),
+(51, 'Plan de formation', 'Plan-de-formation', 'standard', 1, 13, 1352452222, 1352470583),
+(52, 'Actualités du DPS', 'Actualites-du-DPS', 'standard', 2, 3, 1352822652, 1352890466),
+(56, 'Vos interlocuteurs', 'Vos-interlocuteurs', 'standard', 3, 19, 1352899152, 1352899155),
+(57, 'Formation e-learning', 'Formation-e-learning', 'standard', 4, 7, 1352969573, 1352973801),
+(58, 'Maintenance Courante Poste', 'Maintenance-Courante-Poste', 'standard', 1, 30, 1352970843, 1352970843),
+(59, 'Exploitation', 'Exploitation', 'standard', 2, 30, 1352970854, 1352970854),
+(60, 'Développement Ingéniérie réseau et maintenance ligne', 'Developpement-Ingenierie-reseau-et-maintenance-ligne', 'standard', 3, 30, 1352970876, 1352970876),
+(61, 'Maintenance Contrôle Electrique', 'Maintenance-Controle-Electrique', 'standard', 4, 30, 1352970928, 1352970928),
+(62, 'Maintenance télecom & SI', 'Maintenance-telecom-SI', 'standard', 5, 30, 1352970938, 1352970938),
+(63, 'Maintenance spécialisée poste', 'Maintenance-specialisee-poste', 'standard', 6, 30, 1352970947, 1352970947),
+(64, 'Management et métiers transverses', 'Management-et-metiers-transverses', 'standard', 7, 30, 1352970956, 1352970956),
+(65, 'Innovation et ingénierie de la formation', 'Innovation-et-ingenierie-de-la-formation', 'standard', 8, 30, 1352970966, 1352970966),
+(66, 'Ressources stages', 'Ressources-stages', 'standard', 2, 7, 1352972435, 1352973801),
+(67, 'Evaluation des prérequis', 'Evaluation-des-prerequis', 'standard', 3, 7, 1352973796, 1352973801),
+(68, 'Enquêtes de satisfaction', 'Enquetes-de-satisfaction', 'enquete_satisfaction', 5, 7, 1352975502, 1352975502);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `revisions`
+--
+
+DROP TABLE IF EXISTS `revisions`;
+CREATE TABLE IF NOT EXISTS `revisions` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `type` varchar(50) NOT NULL,
+  `intitule` varchar(100) NOT NULL,
+  `page_id` smallint(5) unsigned NOT NULL,
+  `date_creation` int(11) NOT NULL,
+  `date_modification` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=69 ;
+
+--
+-- Contenu de la table `revisions`
+--
+
+INSERT INTO `revisions` (`id`, `type`, `intitule`, `page_id`, `date_creation`, `date_modification`) VALUES
+(1, 'current', 'Etat initial', 1, 1352126526, 1352126526),
+(14, 'current', 'Etat initial', 14, 1352213719, 1352213719),
+(15, 'current', 'Etat initial', 15, 1352215042, 1352215042),
+(16, 'current', 'Etat initial', 16, 1352215059, 1352215059),
+(17, 'current', 'Etat initial', 17, 1352215068, 1352215068),
+(18, 'current', 'Etat initial', 18, 1352215075, 1352215075),
+(20, 'current', 'Etat initial', 20, 1352215099, 1352215099),
+(23, 'current', 'Etat initial', 23, 1352215234, 1352215234),
+(24, 'current', 'Etat initial', 24, 1352215245, 1352215245),
+(26, 'current', 'Etat initial', 26, 1352215642, 1352215642),
+(27, 'current', 'Etat initial', 27, 1352215656, 1352215656),
+(31, 'current', 'Etat initial', 31, 1352217595, 1352217595),
+(32, 'current', 'Etat initial', 32, 1352217604, 1352217604),
+(34, 'current', 'Etat initial', 34, 1352217780, 1352217780),
+(37, 'current', 'Etat initial', 37, 1352217876, 1352217876),
+(38, 'current', 'Etat initial', 38, 1352217889, 1352217889),
+(44, 'current', 'Etat initial', 44, 1352304857, 1352304857),
+(47, 'current', 'Etat initial', 47, 1352368883, 1352368883),
+(48, 'current', 'Etat initial', 48, 1352368896, 1352368896),
+(50, 'current', 'Etat initial', 50, 1352369181, 1352369181),
+(51, 'current', 'Etat initial', 51, 1352452222, 1352452222),
+(52, 'current', 'Etat initial', 52, 1352822652, 1352822652),
+(56, 'current', 'Etat initial', 56, 1352899152, 1352899152),
+(57, 'current', 'Etat initial', 57, 1352969573, 1352969573),
+(58, 'current', 'Etat initial', 58, 1352970843, 1352970843),
+(59, 'current', 'Etat initial', 59, 1352970854, 1352970854),
+(60, 'current', 'Etat initial', 60, 1352970876, 1352970876),
+(61, 'current', 'Etat initial', 61, 1352970928, 1352970928),
+(62, 'current', 'Etat initial', 62, 1352970938, 1352970938),
+(63, 'current', 'Etat initial', 63, 1352970947, 1352970947),
+(64, 'current', 'Etat initial', 64, 1352970956, 1352970956),
+(65, 'current', 'Etat initial', 65, 1352970966, 1352970966),
+(66, 'current', 'Etat initial', 66, 1352972435, 1352972435),
+(67, 'current', 'Etat initial', 67, 1352973796, 1352973796),
+(68, 'current', 'Etat initial', 68, 1352975502, 1352975502);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `rubriques`
+--
+
+DROP TABLE IF EXISTS `rubriques`;
+CREATE TABLE IF NOT EXISTS `rubriques` (
+  `id` smallint(6) unsigned NOT NULL AUTO_INCREMENT,
+  `intitule` varchar(100) NOT NULL,
+  `position` smallint(5) unsigned NOT NULL,
+  `parent_id` smallint(5) unsigned NOT NULL,
+  `date_creation` int(11) NOT NULL,
+  `date_modification` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `parent_id` (`parent_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=31 ;
+
+--
+-- Contenu de la table `rubriques`
+--
+
+INSERT INTO `rubriques` (`id`, `intitule`, `position`, `parent_id`, `date_creation`, `date_modification`) VALUES
+(3, 'Actualités', 1, 0, 1352213387, 1352372063),
+(4, 'Se professionnaliser', 2, 0, 1352213393, 1352372064),
+(5, 'L''offre du DPS', 3, 0, 1352213401, 1352372064),
+(6, 'Connaître le DPS', 4, 0, 1352213409, 1352372065),
+(7, 'Espace Stagiaire', 5, 0, 1352213416, 1352372065),
+(13, 'Les dispositifs', 1, 4, 1352213711, 1352372064),
+(14, 'S''inscrire en formation', 2, 4, 1352215145, 1352372064),
+(16, 'Venir en formation au DPS', 1, 7, 1352215221, 1352973800),
+(19, 'Présentation du département', 1, 6, 1352215625, 1352372065),
+(24, 'Espace réservé', 6, 0, 1352216708, 1352372065),
+(25, 'Contact', 7, 0, 1352369173, 1352372065),
+(30, 'Actualités de l''offre', 1, 5, 1352970811, 1352970814);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `utilisateurs`
+--
+
+DROP TABLE IF EXISTS `utilisateurs`;
+CREATE TABLE IF NOT EXISTS `utilisateurs` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `nom` varchar(100) NOT NULL,
+  `prenom` varchar(100) NOT NULL,
+  `login` varchar(100) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `is_admin` tinyint(1) NOT NULL,
+  `date_creation` int(11) NOT NULL,
+  `date_modification` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Contenu de la table `utilisateurs`
+--
+
+INSERT INTO `utilisateurs` (`id`, `nom`, `prenom`, `login`, `password`, `is_admin`, `date_creation`, `date_modification`) VALUES
+(1, 'Marguin', 'Eric', 'admin', 'IDTzqKoWxCp1Z4xLdab686oMQeqDlE3iqxLdABOMKes=', 1, 0, 0);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -1,0 +1,5 @@
+build_routes -> doit retourner un tableau
+cache/aborescence/delete -> invalidation du cache de l'arborescence
+rte_formulaire_build
+blocs/before_save
+blocs/after_duplicate

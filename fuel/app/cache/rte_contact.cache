@@ -1,0 +1,57 @@
+{{Fuel_Cache_Properties}}{"created":1352796920,"expiration":null,"dependencies":[],"content_handler":"string"}{{/Fuel_Cache_Properties}}	<link type="text/css" rel="stylesheet" href="http://cmsrte.dev/assets/css/rte-contact.css?1352297657" />
+
+<div id="form_contact_container">
+    <div id="form_contact_erreurs"></div>
+    <form action="http://cmsrte.dev/index.php/rte_contact/formulaire/envoyer.json" id="form_contact" accept-charset="utf-8" method="post">
+<div class="form_intitule"><label for="form_civilite">Civilité</label>*</div><div class="form_element"><input type="text" required="required" id="form_civilite" name="civilite" value="" /> <span class="form_element_description"></span> </div><div class="clear"></div>
+<div class="form_intitule"><label for="form_nom">Nom</label>*</div><div class="form_element"><input type="text" required="required" id="form_nom" name="nom" value="" /> <span class="form_element_description"></span> </div><div class="clear"></div>
+<div class="form_intitule"><label for="form_prenom">Prénom</label>*</div><div class="form_element"><input type="text" required="required" id="form_prenom" name="prenom" value="" /> <span class="form_element_description"></span> </div><div class="clear"></div>
+<div class="form_intitule"><label for="form_email_from">Email</label>*</div><div class="form_element"><input type="text" required="required" id="form_email_from" name="email_from" value="" /> <span class="form_element_description"></span> </div><div class="clear"></div>
+<div class="form_intitule"><label for="form_telephone">Téléphone</label></div><div class="form_element"><input type="text" id="form_telephone" name="telephone" value="" /> <span class="form_element_description"></span> </div><div class="clear"></div>
+<div class="form_intitule"><label for="form_organisation">Choisir une organisation</label></div><div class="form_element"><select id="form_organisation" name="organisation">
+	<option value="jean-pierre.lehu@rte-france.com" style="text-indent: 0px;">Direction du DPS</option>
+	<option value="antoine.grammatico@rte-france.com" style="text-indent: 0px;">P&ocirc;le Maintenance Contr&ocirc;le Electrique</option>
+</select> <span class="form_element_description"></span> </div><div class="clear"></div>
+<div class="form_intitule"><label for="form_email_to">Email</label></div><div class="form_element"><input type="text" disabled="1" id="form_email_to" name="email_to" value="" /> <span class="form_element_description"></span> </div><div class="clear"></div>
+<div class="form_intitule"><label for="form_question">Votre question</label>*</div><div class="form_element"><textarea required="required" id="form_question" name="question"></textarea> <span class="form_element_description"></span> </div><div class="clear"></div>
+<div class="form_intitule"><label for="form_piece_jointe">Joindre un fichier</label></div><div class="form_element"><input type="file" id="form_piece_jointe" name="piece_jointe" value="" /> <span class="form_element_description"></span> </div><div class="clear"></div>
+<div class="form_intitule form_submit_btn"><input type="submit" value="Envoyer" id="form_valider" name="valider" /></div>
+</form>
+    <div style="clear:both"></div>
+</div>
+
+<script type="text/javascript">
+    
+$(document).ready(function()
+{
+    change_organisation();
+    $('#form_organisation').change(change_organisation);
+    $('form#form_contact').submit(valide_form);
+});
+
+function change_organisation()
+{
+    $('#form_email_to').val($('#form_organisation').val());
+}
+
+function valide_form()
+{
+    var action = $('#form_contact').attr('action');
+    var data = $('#form_contact').serialize();
+    $.post(action, data, after_valide_form);
+    return false;
+}
+
+function after_valide_form(retour)
+{
+    if(retour.ok == 1)
+    {
+        $('#form_contact_container').html('Demande de contact envoyée');
+    }
+    else
+    {
+       $('#form_contact_erreurs').html(retour.erreurs);
+    }
+}
+    
+</script>

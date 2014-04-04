@@ -1,0 +1,16 @@
+Pour créer un module du cms :
+- créer le dossier modules_cms/mon_module
+- créer le fichier modules_cms/mon_module/config.php
+- déclarer des évènements (voir format plus bas)
+- déclarer des blocs
+
+
+Format tableau évènements
+'cms_listeners'=>array(
+    array('event'=>'nom de l\'évènement', 'callback'=>'\Article\EventTest::alter_name')
+)
+
+Format tableau blocs
+'cms_blocs'=>array(
+    array('intitule'=>'Bloc texte', 'controlleur'=>'Controller_BlocText')
+)

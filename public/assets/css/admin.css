@@ -1,0 +1,18 @@
+ul.menu_admin li {
+    
+    display: inline;
+    margin-left: 10px;
+    
+}
+
+div.intitule {
+    
+    float:left;
+    
+}
+
+.arborescence_racine ul { min-height:10px; }
+.arborescence_racine li { width: 900px; }
+
+.arborescence_racine li.arborescence_rubrique { color:blue}
+.arborescence_racine li.arborescence_page { color:green}

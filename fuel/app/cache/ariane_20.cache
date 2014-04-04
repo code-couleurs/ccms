@@ -1,0 +1,9 @@
+{{Fuel_Cache_Properties}}{"created":1352796971,"expiration":null,"dependencies":["arborescence"],"content_handler":"string"}{{/Fuel_Cache_Properties}}<div id="ariane">
+    <div>VOUS ETES ICI</div>
+    <ul id="fil-ariane">
+                <li><a href="/">Accueil</a></li>
+                        <li><a href="Plan-de-formation">Se professionnaliser</a></li>
+                <li><a href="Inscription-mode-demploi">S'inscrire en formation</a></li>
+                <li><a href="Inscription-mode-demploi">S'inscrire en formation</a></li>
+            </ul>
+</div>

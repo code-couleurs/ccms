@@ -1,0 +1,58 @@
+/* 
+    Document   : rte-contact
+    Created on : 7 nov. 2012, 14:44:46
+    Author     : Marion
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#form_contact_container {
+    padding:40px 30px 170px 33px;
+}
+
+    .form_intitule {
+        float:left;
+        width:200px;
+        margin-right:10px;
+        clear:left;
+        
+        text-align:right;
+        color: #A60071;
+        font-size:14px;
+    }
+    
+    .form_intitule label {
+        color: #434347;
+        margin-right:3px;
+    }
+    
+    .form_element {
+        float:left;
+        margin-bottom:20px;
+    }
+    
+    #form_contact_container .clear {
+        clear:both;
+    }
+    
+        .form_element input[type=text],
+        .form_element textarea {
+            width:246px;
+            border:1px solid #C1C1C3;
+            color: #434347;
+        }
+        
+        
+        .form_submit_btn {
+            margin-left:260px;
+        }
+        
+        #form_valider {
+            float:right;
+            background-color:#0B8CB8;
+            border:none;
+            padding:3px 15px;
+            cursor:pointer;
+            
+            color:#FFF;
+        }

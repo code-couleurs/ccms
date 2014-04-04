@@ -1,0 +1,77 @@
+/* 
+    Document   : menu-rubriques
+    Created on : 5 nov. 2012, 18:26:37
+    Author     : Marion
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.menu_rubrique_sousrubriques {
+    margin:0;
+    padding-left:34px;
+    padding-right:20px;
+    z-index:99;
+    position:relative;
+}
+
+    .menu_rubrique_sousrubriques li {
+        color:#0B8CB8;
+        font-size:18px;
+        font-family: Arial, sans-serif;
+        
+        padding:10px 0px 10px 12px;
+        list-style: none outside none;
+        cursor:pointer;
+        border-bottom:1px solid #D8D9DA;
+        z-index:99;
+    position:relative;
+    }
+    
+        .menu_rubrique_sousrubriques li a {
+            color:#0B8CB8;
+            text-decoration:none;
+        }
+        
+        .menu_rubrique_sousrubriques li a:hover,
+        .menu_rubrique_sousrubriques li.active-trail a {
+            color:#065A77;
+        }
+
+        .menu_rubrique_pages {
+            padding:0 0 0 5px;
+            margin-top:5px;
+            margin-left:0px;
+            display:none;
+        }
+        
+        .menu_rubrique_sousrubriques li.active-trail .menu_rubrique_pages {
+            display:block;
+        }
+        
+            .menu_rubrique_pages li {
+                border:none;
+                padding:0;
+                margin-top:10px;
+                line-height:18px;
+            }
+
+                .menu_rubrique_pages li a,
+                .menu_rubrique_sousrubriques li.active-trail .menu_rubrique_pages a{
+                    font-family: Arial Rounded, Arial, sans-serif;
+                    color:#1B1B1B;
+                    font-size:14px;
+                    text-decoration: none;
+                    padding-left:20px;
+                    margin-left:-20px;
+                    width:198px;
+                    display:block;
+                }
+                
+                .menu_rubrique_pages li a.active,
+                .menu_rubrique_pages li a:hover {
+                    background-image:url(../img/menurubrique/fleche.png);
+                    background-repeat:no-repeat;
+                    background-position:top left;
+                    color:#1B1B1B;
+                }
+

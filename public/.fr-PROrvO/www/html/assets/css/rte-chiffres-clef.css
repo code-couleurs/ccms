@@ -1,0 +1,85 @@
+/* 
+    Document   : rte-valeurs
+    Created on : 6 nov. 2012, 17:15:57
+    Author     : Marion
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#rte-chiffresclef {
+} 
+
+    #rte-chiffresclef-diapo {
+        z-index:10;
+        position:relative;
+    }
+
+    #rte-chiffresclef-nav {
+        background-image:url(../img/rte_valeurs/nav/nav-bg.png);
+        background-repeat:repeat-x;
+        width:630px;
+        height:35px;
+        z-index:20;
+        position:relative;
+    }
+
+        #pager {
+            float:left;
+            width:60px;
+            margin-left:10px;
+            margin-top:14px;
+        }
+
+            #pager a {
+                background-image:url(../img/rte_valeurs/nav/pager-off.png);
+                background-repeat:no-repeat;
+                display:block;
+                width:9px;
+                height:9px;
+                text-indent:-9999px;
+                float:left;
+                margin-right:7px;
+            }
+
+            #pager a.activeSlide {
+                background-image:url(../img/rte_valeurs/nav/pager-on.png);
+            }
+
+        #caption {
+            float:left;
+            width:500px;
+            padding-top:9px;
+
+            text-align:center;
+            text-transform: uppercase;
+            color:#FFF;
+            font-size:15px;
+            font-family: Arial Rounded, Arial, sans-serif;
+        }
+
+        #controls {
+            float:right;
+            margin-top:10px;
+            margin-right:10px;
+        }
+
+            #pause {
+                float:left;
+                background-image:url(../img/rte_valeurs/nav/pause.png);
+                background-repeat:no-repeat;
+                display:block;
+                width:13px;
+                height:16px;
+                margin-right:10px;
+                cursor:pointer;
+            }
+
+            #play {
+                float:left;
+                background-image:url(../img/rte_valeurs/nav/play.png);
+                background-repeat:no-repeat;
+                display:block;
+                width:14px;
+                height:15px;
+                cursor:pointer;
+            }

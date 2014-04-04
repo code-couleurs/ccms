@@ -1,0 +1,41 @@
+{{Fuel_Cache_Properties}}{"created":1352655087,"expiration":null,"dependencies":[],"content_handler":"string"}{{/Fuel_Cache_Properties}}	<script type="text/javascript" src="http://cmsrte.dev/assets/js/jquery_cycle.min.js?1352473972"></script>
+	<link type="text/css" rel="stylesheet" href="http://cmsrte.dev/assets/css/rte-valeurs.css?1352452813" />
+
+<script type="text/javascript">
+    
+    $(document).ready(function() {
+        $('#rte-valeurs-diapo').cycle({ 
+            fx:     'scrollHorz', 
+            timeout: 5000, 
+            after:   displayCaption,
+            pager: '#pager'
+        });
+        
+        function displayCaption() { 
+            $('#caption').html(this.alt); 
+        }
+        
+        $('#pause').click(function(){
+            $('#rte-valeurs-diapo').cycle('pause');
+        });
+        
+        $('#play').click(function(){
+            $('#rte-valeurs-diapo').cycle('resume');
+        });
+    });
+    
+</script>
+
+<div id="rte-valeurs-diapo">
+    <img src="assets/img/rte_valeurs/3leviers.png" alt="satisfaction des bénéficiaires" />
+    <img src="assets/img/rte_valeurs/adaptation-metiers.jpg" alt="s'adapter aux besoins des métiers" />
+    <img src="assets/img/rte_valeurs/parcours-innovants.jpg" alt="des parcours de formation innovants" />
+</div>
+<div id="rte-valeurs-nav">
+    <div id="pager"></div>
+    <div id="caption"></div>
+    <div id="controls">
+        <div id="pause"></div>
+        <div id="play"></div>
+    </div>
+</div>

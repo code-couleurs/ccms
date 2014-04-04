@@ -1,0 +1,9 @@
+{{Fuel_Cache_Properties}}{"created":1352796959,"expiration":null,"dependencies":["arborescence"],"content_handler":"string"}{{/Fuel_Cache_Properties}}<div id="ariane">
+    <div>VOUS ETES ICI</div>
+    <ul id="fil-ariane">
+                <li><a href="/">Accueil</a></li>
+                        <li><a href="Plan-de-formation">Se professionnaliser</a></li>
+                <li><a href="Plan-de-formation">Les dispositifs</a></li>
+                <li><a href="Validation-des-acquis-de-lexperience">Validation des acquis (VAE)</a></li>
+            </ul>
+</div>

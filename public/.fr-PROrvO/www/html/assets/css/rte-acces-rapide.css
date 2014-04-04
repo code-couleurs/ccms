@@ -1,0 +1,46 @@
+/* 
+    Document   : rte-acces-rapide
+    Created on : 7 nov. 2012, 10:16:27
+    Author     : Marion
+    Description:
+        Purpose of the stylesheet follows.
+*/
+#rte-acces-rapide {
+   padding:25px 9px 65px; 
+   margin-top:33px;
+   background-color: #FFF;
+}
+
+    .acces-rapide-btn {
+        float:left;
+        width:202px;
+        margin-left:13px;
+        
+        font-size:15px;
+        color:#434347;
+        font-family: Franklin, Arial, sans-serif;
+    }
+    
+        .acces-rapide-btn span {
+            margin-left:5px;
+        }
+    
+        .acces-rapide-btn a {
+            display:block;
+            width:202px;
+            height:101px;
+            background-repeat:no-repeat;
+            margin-top:15px;
+        }
+
+        a.expace-stagiaire-btn {
+            background-image:url(../img/rte_accesrapide/espace-stagiaire-btn.gif);
+        }
+        
+        a.missions-valeurs-btn {
+            background-image:url(../img/rte_accesrapide/missions-valeurs-btn.gif);
+        }
+        
+        a.devenez-formateur-btn {
+            background-image:url(../img/rte_accesrapide/devenez-formateur-btn.gif);
+        }

@@ -1,0 +1,133 @@
+/* 
+    Document   : menu.css
+    Created on : 5 nov. 2012, 16:40:26
+    Author     : Marion
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#menu {
+    position: relative;
+    z-index: 99;
+}
+
+.menu_niveau_1 {
+    margin:0;
+    padding:0;
+    margin-left:-10px;
+    background-image:url(../img/menu-bg.png);
+    background-repeat:repeat-x;
+    height:48px;
+}
+
+    .menu_niveau_1 li {
+        float:left;
+        list-style: none outside none;
+        background-image:url(../img/menu-separateur.gif);
+        background-repeat:no-repeat;
+        background-position:right;
+        position:relative;
+        margin-left:-1px;
+    }
+    
+        .menu_niveau_1 li a {
+            color:#FFF;
+            font-family:Arial Rounded, Arial, sans-serif;
+            font-size:12px;
+            text-transform: uppercase;
+            text-decoration:none;
+            
+            display:block;
+            height:26px;
+            padding:15px 10px 0;
+            margin-right:1px;
+        }
+        
+             .menu_niveau_1 li a.login_link {
+                 padding-left:8px; 
+                 padding-right:0px;
+             }
+        
+        .menu_niveau_1 li:hover {
+            background-image:url(../img/menu-hover-bg.png);
+            background-repeat:repeat-x;
+        }
+        
+        .menu_niveau_1 li.active,
+        .menu_niveau_1 li.active-trail {
+            background-image:url(../img/menu-hover-bg.png);
+            background-repeat:repeat-x;
+        }
+        
+        .menu_niveau_1 li.last {
+            background: none;
+        }
+        
+        
+        
+    .menu_niveau_1 li.accueil {
+        padding:0;
+        background:none;
+    }
+    
+        .menu_niveau_1 li.accueil a {
+            text-indent:-9999px;
+            
+            background-image:url(../img/menu-accueil-bg.png);
+            background-repeat:no-repeat;
+            width:56px;
+            height:57px;
+            margin-top:-2px;
+            padding:0;
+        }
+
+        .menu_niveau_2 {
+            display:none;
+            left: 0;
+            margin-left: 0;
+            padding: 0;
+            padding-top:4px;
+            position: absolute;
+            width: 214px;
+            background-color:#4B8DB3;
+            
+        }
+          
+        .menu_niveau_1 li:hover .menu_niveau_2 {
+            display:block;
+        }
+        
+            .menu_niveau_2 li {
+                background:none;
+                border-bottom:1px solid #8B9CBC;
+                width:214px; 
+            }
+            
+            .menu_niveau_2 li:hover {
+                background:none;
+            }
+            
+            .menu_niveau_2 li.menu-0 {
+                background-image:url(../img/menu-hover-fleche.png);
+                background-repeat:no-repeat;
+                background-position:33% 0%;
+                margin-top:-6px;
+                padding-top:5px;
+            }
+
+                .menu_niveau_2 li a {
+                    background:none;
+                    padding:12px 5px 14px 20px;
+                    height:auto;
+                    
+                    text-transform: none;
+                    font-size:12px;
+                }
+                
+                .menu_niveau_2 li a:hover {
+                   color:#CCCCD5;
+                }
+                
+                
+                
+                

@@ -1,0 +1,90 @@
+{{Fuel_Cache_Properties}}{"created":1352796875,"expiration":null,"dependencies":["arborescence"],"content_handler":"string"}{{/Fuel_Cache_Properties}}<ul class="menu_niveau_1">
+    <li class="accueil"><a href="/">Accueil</a></li>
+        <li class="item_niveau_1 menu-0 active-trail">
+        <a href="Editorial" >
+            Actualités            
+        </a>
+                <ul class="menu_niveau_2">
+                        <li class="item_niveau_2 menu-0">
+                <a href="Editorial">
+                    Actualités du DPS                </a>
+            </li>
+                        <li class="item_niveau_2 menu-1">
+                <a href="Actualites-des-poles">
+                    Actualités des pôles                </a>
+            </li>
+                    </ul>
+            </li>
+        <li class="item_niveau_1 menu-1 ">
+        <a href="Plan-de-formation" >
+            Se professionnaliser            
+        </a>
+                <ul class="menu_niveau_2">
+                        <li class="item_niveau_2 menu-0">
+                <a href="Plan-de-formation">
+                    Les dispositifs                </a>
+            </li>
+                        <li class="item_niveau_2 menu-1">
+                <a href="Inscription-mode-demploi">
+                    S'inscrire en formation                </a>
+            </li>
+                    </ul>
+            </li>
+        <li class="item_niveau_1 menu-2 ">
+        <a href="Actualite-de-loffre" >
+            L'offre du DPS            
+        </a>
+                <ul class="menu_niveau_2">
+                        <li class="item_niveau_2 menu-0">
+                <a href="Actualite-de-loffre">
+                    Actualité de l'offre                </a>
+            </li>
+                        <li class="item_niveau_2 menu-1">
+                <a href="Metiers-techniques">
+                    Métiers techniques                </a>
+            </li>
+                        <li class="item_niveau_2 menu-2">
+                <a href="Offre-management-et-metiers-transverses">
+                    Management et métiers transverses                </a>
+            </li>
+                        <li class="item_niveau_2 menu-3">
+                <a href="Infos-pratiques-acces-contact">
+                    Venir en formation au DPS                </a>
+            </li>
+                    </ul>
+            </li>
+        <li class="item_niveau_1 menu-3 ">
+        <a href="Mission-et-valeurs" >
+            Connaître le DPS            
+        </a>
+                <ul class="menu_niveau_2">
+                        <li class="item_niveau_2 menu-0">
+                <a href="Mission-et-valeurs">
+                    Présentation du département                </a>
+            </li>
+                        <li class="item_niveau_2 menu-1">
+                <a href="Le-metier-de-formateur">
+                    Le métier de formateur                </a>
+            </li>
+                        <li class="item_niveau_2 menu-2">
+                <a href="Acces-infos-pratiques">
+                    Accès infos pratiques                </a>
+            </li>
+                    </ul>
+            </li>
+        <li class="item_niveau_1 menu-4 ">
+        <a href="http://portail-formation/?redirect=espace_stagiaire" target="_blank">
+            Espace Stagiaire            
+        </a>
+            </li>
+        <li class="item_niveau_1 menu-5 ">
+        <a href="http://portail-formation/?redirect=espaces_reserves" target="_blank">
+            Espace réservé            
+        </a>
+            </li>
+        <li class="item_niveau_1 menu-6 ">
+        <a href="contact" >
+            Contact            
+        </a>
+            </li>
+    </ul>

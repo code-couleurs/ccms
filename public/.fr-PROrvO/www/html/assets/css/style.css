@@ -1,0 +1,439 @@
+/* 
+    Document   : style
+    Created on : 5 nov. 2012, 15:43:18
+    Author     : Marion
+    Description:
+        Purpose of the stylesheet follows.
+*/
+@font-face{
+    font-family : "Arial Rounded";
+    src : url('fonts/arlrdbd.eot'); /* Pour IE9 Compat mode */
+    src : url('fonts/arlrdbd.eot?') format('eot'),
+          url('fonts/arlrdbd.woff') format('woff'),
+          url('fonts/arlrdbd.svg#abcd') format('svg'),
+          url('fonts/arlrdbd.ttf') format('truetype');
+}
+
+@font-face{  
+    font-family : "Franklin";
+    src : url('fonts/framd.eot'); /* Pour IE9 Compat mode */
+    src : url('fonts/framd.eot?') format('eot'),
+          url('fonts/framd.woff') format('woff'),
+          url('fonts/framd.svg#abcd') format('svg'),
+          url('fonts/framd.ttf') format('truetype');
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image:url(../img/background.jpg);
+    background-repeat:no-repeat;
+    background-position:top center;
+    background-color:#FFFFFF;
+    background-attachment:fixed;
+    margin:0px;
+    padding:0px;
+    
+    font-family:Arial, sans-serif;
+    font-size:13px;
+}
+    
+    #barre-haut-page {
+        background-image:url(../img/barre-haut-page-bg.png);
+        background-repeat:repeat-x;
+        width:100%;
+        height:40px;
+    }
+    
+        #barre-haut-page .content {
+            width:959px;
+            margin:0 auto;
+        }
+        
+            #infos-user {
+                float:left;
+                margin-left:23px;
+                margin-top:9px;
+                background-image:url(../img/icone-user-infos.png);
+                background-repeat:no-repeat;
+                background-position:right;
+                padding-right:30px;
+                
+                font-family: Arial Rounded, Arial, sans-serif;
+                color:#FFFFFF;
+            }
+            
+            #infos-user form{
+                margin-top: -4px;
+            }
+        
+            #menu-barre-haut {
+                float:right;
+                width:206px;
+                margin:0;
+                padding:0;
+            }
+            
+                #menu-barre-haut li {
+                    float:left;
+                    list-style: none outside none;
+                }
+                
+                    #menu-barre-haut li a.annuaire-rh {
+                        background-image:url(../img/annuaire-rh-btn.gif);
+                        background-repeat:no-repeat;
+                        display:block;
+                        width:133px;
+                        height:34px;
+                        text-indent:-9999px;
+                    }
+                    
+                    #menu-barre-haut li a.rte-net {
+                        background-image:url(../img/rte-net-btn.gif);
+                        background-repeat:no-repeat;
+                        display:block;
+                        width:73px;
+                        height:34px;
+                        text-indent:-9999px;
+                    }
+
+    #container {
+        width:959px;
+        margin:-7px auto 0;
+        height: auto !important;
+        min-height: 100%;
+    }
+    
+        #header {
+            background-image:url(../img/header-bg.png);
+            background-repeat:no-repeat;
+            background-position:top center;
+            height:178px;
+        }
+        
+            #menu {
+                padding-top:89px;
+            }
+            
+        #content {
+            background-color:#FFF;
+            min-height:200px;
+        }
+        
+            #content-left {
+                float:left;
+                width:624px;
+                min-height:386px;
+                padding:40px 30px 170px 33px;
+            } 
+            #content-left.accueil {
+                background-image:url(../img/content-left-bg.png);
+                background-repeat:repeat-y;
+            }
+
+            #content-right {
+                width:272px;
+                min-height:596px;
+                float:left;
+                background-image:url(../img/content-right-bg.png);
+                background-repeat:no-repeat;
+                background-position:top left;
+                margin-top:-22px;
+                padding-top:30px;
+            }
+            
+                #content-right .menu_rubrique_title {
+                    background-image:url(../img/menu-rubrique-title-bg.png);
+                    background-repeat:no-repeat;
+                    width:220px;
+                    height:35px;
+                    display:block;
+                    padding-left:43px;
+                    padding-top:2px;
+                    
+                    font-family: Franklin, Arial, sans-serif;
+                    color:#F9FAFA;
+                    font-size:19px;
+                }
+                
+        #footer {
+            width:100%;
+            height:75px;
+            background-image:url(../img/footer-bg.png);
+            background-position:bottom;
+            margin-top:10px;
+        }
+        
+        #footer-content {
+            width:959px;
+            margin:0 auto;
+            padding-left:40px;
+        } 
+            
+h1 {
+    font-family: Arial Rounded, Arial, sans-serif;
+    color:#A60071;
+    font-size:24px;
+    text-transform: uppercase;
+    
+    margin:0 0 0 10px;
+    padding:0;
+}
+
+
+/*************************************************************************
+ * ACCUEIL
+ *************************************************************************/
+      
+#content-left.accueil {
+    width:687px;
+    padding:40px 0 0px;
+}
+
+#content-right-accueil {
+    width:224px;
+    min-height:596px;
+    float:left;
+    background-image:url(../img/content-right-accueil-bg.png);
+    background-repeat:no-repeat;
+    background-position:top left;
+    margin-top:-22px;
+    padding:30px 22px 0 26px;
+}
+
+    #content-right-accueil h2 {
+        font-family: Franklin, Arial, sans-serif;
+        font-size:15px;
+        color:#FFFFFF;
+        text-transform:uppercase;
+        font-weight:normal;
+
+        padding-left:30px;
+        padding-top:3px;
+        margin-left:-26px;
+        margin-bottom:5px;
+    }
+
+    h2.titre-bleu {
+        background-image:url(../img/titre-bleu-bg.png);
+        background-repeat:no-repeat;
+        display:block;
+        width:220px;
+        height:35px;
+    }
+
+    h2.titre-gris {
+        background-image:url(../img/titre-gris-bg.png);
+        background-repeat:no-repeat;
+        display:block;
+        width:220px;
+        height:36px;
+    }
+
+    #content-right-accueil h3 {
+        color:#1B1B1B;
+        font-family: Arial Rounded, Arial, sans-serif;
+        font-size:13px;
+
+        margin-top:0px;
+        margin-bottom:2px;
+        padding-bottom:5px;
+        border-bottom:1px solid #C7C7C7;
+    }
+
+    #content-right-accueil .date {
+        color:#181819;
+        font-size:10px;
+        font-family: Arial Rounded, Arial, sans-serif;
+        text-align:right;
+    }
+
+    #content-right-accueil p {
+        font-size:12px;
+        color:#8E8F96;
+    }
+
+    #content-right-accueil p a {
+        color:#0B8CB8;
+        font-size:11px;
+        text-decoration:none;
+    }
+
+    #une-departement {
+        margin-bottom:46px;
+    }
+
+    #une-poles {
+        margin-bottom:46px;
+    }
+
+    #infos-pratiques a {
+        display:block;
+        background-image:url(../img/infos-pratiques-bg.gif);
+        width:222px;
+        height:26px;
+        margin-left:-16px;
+        padding-top:155px;
+        padding-right:23px;
+
+        font-family: Franklin, Arial, sans-serif;
+        color:#FFF;
+        text-decoration:none;
+        font-size:12px;
+        text-align:right;
+    }
+    
+/*************************************************************************
+ * PAGES EDITORIALES
+ *************************************************************************/
+#content-left h1 {
+    padding-left: 0px;
+    margin-left:0px;
+}
+
+#content-left h2 {
+    margin-top: 30px;
+    font-family: Arial Bold, sans-serif;
+    font-size: 13px;
+    color: #A60071;
+}
+
+#content-left p {
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color:  #5d5d61;
+    margin-bottom:-5px;
+}
+
+#content-left ul {
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color:  #5d5d61;
+    padding-left: 15px;
+}
+    
+#content-left a {
+    color:#0B8CB8;
+    text-decoration:none;
+}
+
+#fancyvideo-loader {
+    
+    position: absolute;
+    top: 100px;
+    left : 200px;
+    z-index: 666;
+    
+}
+
+#ressources_stages_recherche {
+    
+    margin-top: 50px;
+    
+}
+
+.bloc {
+    clear:both;
+}
+
+.bloc_chapo {
+    
+    background-color : #DDD;
+    padding: 10px 20px 20px 20px;
+    margin: 20px 0px 0px 0px;
+    font-weight: bold;
+    
+}
+
+.video_player {
+    width:200px;
+    height:150px;
+}
+
+.bloc_texte_media_media {
+    float:left;
+    margin-right: 10px;
+}
+
+img.icon {
+    vertical-align: middle;
+    border: 0px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.form_intitule {
+    float:left;
+    width:200px;
+    margin-right:10px;
+    clear:left;
+
+    text-align:right;
+    color: #A60071;
+    font-size:14px;
+}
+
+.form_intitule label {
+    color: #434347;
+    margin-right:3px;
+}
+
+.form_element {
+    float:left;
+    margin-bottom:20px;
+}
+
+div.clear {
+    clear:both;
+}
+
+.form_submit_btn {
+    margin-left:260px;
+}
+
+button.form_valider {
+    float:right;
+    background-color:#0B8CB8;
+    border:none;
+    padding:3px 15px;
+    cursor:pointer;
+
+    color:#FFF;
+}
+
+.bloc_action {
+    float:right;
+}
+
+    .move_bloc {
+        cursor: move;
+    }
+    
+    .bloc_action img {
+        border: 0px;
+    }
+    
+    
+    
+ul#tabs_revisions {
+    margin-top: -30px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+    ul#tabs_revisions li {
+        display:inline;
+        list-style-type: none;
+        background-color:#ccc;
+        padding: 5px 10px 5px 10px;
+        
+    }
+    
+    ul#tabs_revisions li.active {
+        font-weight: bold;
+        
+    }

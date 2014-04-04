@@ -1,0 +1,9 @@
+{{Fuel_Cache_Properties}}{"created":1352796953,"expiration":null,"dependencies":["arborescence"],"content_handler":"string"}{{/Fuel_Cache_Properties}}<div id="ariane">
+    <div>VOUS ETES ICI</div>
+    <ul id="fil-ariane">
+                <li><a href="/">Accueil</a></li>
+                        <li><a href="Mission-et-valeurs">Connaître le DPS</a></li>
+                <li><a href="Mission-et-valeurs">Présentation du département</a></li>
+                <li><a href="Mission-et-valeurs">Mission et valeurs</a></li>
+            </ul>
+</div>

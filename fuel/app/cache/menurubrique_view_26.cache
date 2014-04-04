@@ -1,0 +1,28 @@
+{{Fuel_Cache_Properties}}{"created":1352796953,"expiration":null,"dependencies":["arborescence"],"content_handler":"string"}{{/Fuel_Cache_Properties}}<span class="menu_rubrique_title">
+    Connaître le DPS</span>
+<ul class="menu_rubrique_sousrubriques">
+        <li class="active-trail">
+        <div><a href="Mission-et-valeurs">Présentation du département</a></div>
+        <ul class="menu_rubrique_pages">
+                        <li>
+                <a class="active" href="Mission-et-valeurs">Mission et valeurs</a>
+            </li>
+                        <li>
+                <a  href="Chiffres-clef">Chiffres clef</a>
+            </li>
+                        <li>
+                <a  href="Livret-daccueil">Livret d'accueil</a>
+            </li>
+                    </ul>
+    </li>
+        <li >
+        <div><a href="Le-metier-de-formateur">Le métier de formateur</a></div>
+        <ul class="menu_rubrique_pages">
+                    </ul>
+    </li>
+        <li >
+        <div><a href="Acces-infos-pratiques">Accès infos pratiques</a></div>
+        <ul class="menu_rubrique_pages">
+                    </ul>
+    </li>
+    </ul>

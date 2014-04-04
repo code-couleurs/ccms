@@ -1,0 +1,1 @@
+<a class="fancy_image" href="<?php echo $media ?>"><img src="<?php echo $thumb ?>" /></a>

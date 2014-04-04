@@ -1,0 +1,77 @@
+.caroussel_container {
+    margin-top:25px;
+    width:628px;
+}
+    
+    .bloc_caroussel_nav {
+        float:right;
+        width:55px;
+        margin-top:10px;
+        margin-bottom: 10px;
+    }
+    
+        .bloc_caroussel_prev {
+            float:left;
+            background-image:url(../img/bloccaroussel/prev-off.gif);
+            background-repeat:no-repeat;
+            display:block;
+            width:22px;
+            height:22px;
+            margin-right:9px;
+        }
+        
+            .bloc_caroussel_prev_btn {
+                 background-image:url(../img/bloccaroussel/prev-on.gif);
+                 display:block;
+                width:22px;
+                height:22px;
+                cursor: pointer;
+            }
+        
+        .bloc_caroussel_next {
+            float:left;
+            background-image:url(../img/bloccaroussel/next-off.gif);
+            background-repeat:no-repeat;
+            display:block;
+            width:22px;
+            height:22px;
+        }
+        
+            .bloc_caroussel_next_btn {
+                background-image:url(../img/bloccaroussel/next-on.gif);
+                display:block;
+                width:22px;
+                height:22px;
+                cursor: pointer;
+            }
+
+    .bloc_caroussel_diapos {    
+        width:625px;
+        height:180px;
+    }
+    
+        .bloc_caroussel_diapo_set {
+            padding-left:9px;
+        }
+
+            .bloc_caroussel_diapo {
+                padding-top:15px;
+                width:200px;
+                height:160px;
+                float:left;
+                margin-right:5px;
+                line-height: 104px;
+                text-align: left;
+                cursor:pointer;
+            }
+
+    .bloc_caroussel_diapos_container {
+        background-color:#333;
+        padding-bottom: 10px;
+        clear:both;
+    }
+    .bloc_caroussel_diapos_container div.caroussel_container_instruction {
+        text-align:center;
+        color:#ccc;
+        font-weight: bold;
+    }

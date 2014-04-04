@@ -1,0 +1,30 @@
+{{Fuel_Cache_Properties}}{"created":1352797077,"expiration":null,"dependencies":["arborescence"],"content_handler":"string"}{{/Fuel_Cache_Properties}}<span class="menu_rubrique_title">
+    L'offre du DPS</span>
+<ul class="menu_rubrique_sousrubriques">
+        <li class="active-trail">
+        <div><a href="Actualite-de-loffre">Actualité de l'offre</a></div>
+        <ul class="menu_rubrique_pages">
+                    </ul>
+    </li>
+        <li >
+        <div><a href="Metiers-techniques">Métiers techniques</a></div>
+        <ul class="menu_rubrique_pages">
+                    </ul>
+    </li>
+        <li >
+        <div><a href="Offre-management-et-metiers-transverses">Management et métiers transverses</a></div>
+        <ul class="menu_rubrique_pages">
+                    </ul>
+    </li>
+        <li >
+        <div><a href="Infos-pratiques-acces-contact">Venir en formation au DPS</a></div>
+        <ul class="menu_rubrique_pages">
+                        <li>
+                <a  href="Infos-pratiques-acces-contact">Infos pratiques, accès, contact</a>
+            </li>
+                        <li>
+                <a  href="Votre-stage-a-la-loupe">Zoom sur votre stage</a>
+            </li>
+                    </ul>
+    </li>
+    </ul>

@@ -1,0 +1,8 @@
+Error - 2012-11-26 14:03:22 --> Error - Call to undefined method Fuel\Core\Response::execute() in /home/praentitong/www/cms_rte/fuel/app/classes/bloc.php on line 67
+Error - 2012-11-26 14:04:15 --> 8 - Undefined variable: bloc_id in /home/praentitong/www/cms_rte/fuel/app/modules_cms/bloccaroussel/classes/controller/caroussel.php on line 145
+Error - 2012-11-26 14:04:48 --> 1048 - Column 'revision_id' cannot be null [ INSERT INTO `blocs` (`code`, `position`, `revision_id`, `date_creation`, `date_modification`) VALUES ('bloc_caroussel', 1, null, 1353938689, 1353938689) ] in /home/praentitong/www/cms_rte/fuel/core/classes/database/mysql/connection.php on line 235
+Error - 2012-11-26 14:06:51 --> Error - Property "bloc_caroussel_id" not found for Bloccaroussel\Model_BlocCarousselImage. in /home/praentitong/www/cms_rte/fuel/packages/orm/classes/model.php on line 954
+Error - 2012-11-26 14:07:16 --> Error - Class 'blocchapo\Log' not found in /home/praentitong/www/cms_rte/fuel/app/modules_cms/blocchapo/classes/controller/blocchapo.php on line 65
+Error - 2012-11-26 14:07:47 --> 1048 - Column 'revision_id' cannot be null [ INSERT INTO `blocs` (`code`, `position`, `revision_id`, `date_creation`, `date_modification`) VALUES ('bloc_chapo', 1, null, 1353938868, 1353938868) ] in /home/praentitong/www/cms_rte/fuel/core/classes/database/mysql/connection.php on line 235
+Error - 2012-11-26 14:08:49 --> Error - Class 'Blocimage\Model_Image' not found in /home/praentitong/www/cms_rte/fuel/app/modules_cms/blocimage/classes/model/blocimage.php on line 45
+Error - 2012-11-26 14:09:23 --> Error - Class 'bloctexte\Model_BlocCTexte' not found in /home/praentitong/www/cms_rte/fuel/app/modules_cms/bloctexte/classes/controller/bloctexte.php on line 85

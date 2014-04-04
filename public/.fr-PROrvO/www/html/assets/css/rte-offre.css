@@ -1,0 +1,145 @@
+/* 
+    Document   : rte-offre.css
+    Created on : 6 nov. 2012, 17:52:30
+    Author     : Marion
+    Description:
+        Purpose of the stylesheet follows.
+*/
+#rte-offre {
+    background-color:#FFF;
+    margin-top:25px;
+    width:628px;
+    padding:20px 30px 15px 22px;
+}
+
+    #rte-offre-titre {
+        float:left;
+        /*width:490px;*/
+        margin-bottom:15px;
+        
+        color:#525257;
+        font-family:Franklin, Arial, sans-serif;
+        font-size:21px;
+    }
+    
+        #rte-offre-titre .titre-debut {
+            font-family:Georgia, Arial, sans-serif;
+            font-size:24px;
+            font-style:italic;
+        }
+    
+        #rte-offre-titre .chiffre {
+            font-family:Georgia, Arial, sans-serif;
+            font-size:30px;
+            color:#0A82AF;
+            font-style:italic;
+        }
+        
+        #rte-offre-titre img {
+            margin-right:15px;
+            margin-left:10px;
+        }
+    
+    #rte-offre-nav {
+        float:right;
+        width:55px;
+        margin-top:10px;
+    }
+    
+        #prev {
+            float:left;
+            background-image:url(../img/rte_offre/prev-off.gif);
+            background-repeat:no-repeat;
+            display:block;
+            width:22px;
+            height:22px;
+            margin-right:9px;
+        }
+        
+            #prev-btn {
+                 background-image:url(../img/rte_offre/prev-on.gif);
+                 display:block;
+                width:22px;
+                height:22px;
+            }
+        
+        #next {
+            float:left;
+            background-image:url(../img/rte_offre/next-off.gif);
+            background-repeat:no-repeat;
+            display:block;
+            width:22px;
+            height:22px;
+        }
+        
+            #next-btn {
+                background-image:url(../img/rte_offre/next-on.gif);
+                display:block;
+                width:22px;
+                height:22px;
+            }
+
+    #rte-offre-diapo {
+        width:630px;
+
+        text-align:center;
+        color:#FFF;
+        font-family:Arial Rounded, Arial, sans-serif;
+        font-size:13px;
+        cursor:pointer;
+    }
+
+        .diapo {
+            width:106px;
+            height:104px;
+            float:left;
+            margin-right:20px;
+            line-height: 104px;
+            text-align: left;
+        }
+            .diapo div {
+                font-size:13px;
+                width: 100px;
+                vertical-align: middle;
+                line-height: 1.2;
+                text-align: center;
+                display: inline-block;
+            }
+
+        #rte-offre-diapo .diapo-1 {
+            background-image:url(../img/rte_offre/diapo-1-bg.gif);
+            background-repeat:repeat-x;
+        }
+
+        #rte-offre-diapo .diapo-2 {
+            background-image:url(../img/rte_offre/diapo-2-bg.gif);
+            background-repeat:repeat-x;
+        }
+
+        #rte-offre-diapo .diapo-3 {
+            background-image:url(../img/rte_offre/diapo-3-bg.gif);
+            background-repeat:repeat-x;
+        }
+
+        #rte-offre-diapo .diapo-4 {
+            background-image:url(../img/rte_offre/diapo-4-bg.gif);
+            background-repeat:repeat-x;
+        }
+
+        #rte-offre-diapo .diapo-5 {
+            background-image:url(../img/rte_offre/diapo-5-bg.gif);
+            background-repeat:repeat-x;
+            margin-right:0px;
+        }
+
+    a.voir-offre {
+        background-image:url(../img/rte_offre/fleche.gif);
+        background-repeat:no-repeat;
+        padding-left:10px;
+        margin-top:20px;
+        float:right;
+        
+        text-decoration:none;
+        color:#0B8CB8;
+        font-size:14px;
+    }
